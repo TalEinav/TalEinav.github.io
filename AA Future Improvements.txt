@@ -1,0 +1,8 @@
+ - I want to add my "2017-05-20 Graduate Research Spotlight.mp4" video as a link on my research page. It is 1GB, so maybe someday I will either upgrade my Dropbox account to have more space or get more space on my website to accomodate this.
+
+----------------------
+I also want to figure out how to stretch everything better horizontally to accommodate different screen sizes.
+
+=== Examples of Cool Website Designs ===
+http://salislab.net/
+The top panel seems overly fancy to me, but I like the professional layout of the points at the bottom
