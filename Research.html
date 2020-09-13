@@ -120,6 +120,211 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 
+	<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Making Maps and Splitting Serum</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s" style="color: rgb(0, 0, 0)">"Still round the corner, there may wait, a new road or a secret gate." - J. R. R. Tolkien</p>
+			<div class="about-grids">
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="NeutMapsAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('NeutMapsImage1')" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseOne" aria-expanded="true" aria-controls="NeutMapsCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>What is Your Unique Level of Protection?
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="NeutMapsHeadingOne">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										When we get infected by a virus, we generate a vast array of antibodies to clear the infection. While most of these antibodies are ultimately degraded, a subset stick around as memory cells in case we encounter this same virus in the future. Hence, each of us has a unique antibody repertoire based on our specific infection history.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This brings us to a key question in immunology: What protection do your specific antibodies offer?
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										To be concrete, let us consider flu. Each year, hundreds of different flu strains circulate around the world and infect millions of people. This year, will you become sick from one of these flu viruses, or will your antibodies protect you?
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" id="firstTitleToggle" role="button" onclick="customClick('NeutMapsImage2')" data-toggle="collapse"
+									 data-parent="#NeutMapsAccordion" href="#NeutMapsCollapseTwo" aria-expanded="false" aria-controls="NeutMapsCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Will You Get Sick this Year?
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingTwo">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										This question is surprisingly difficult to answer! Although our blood contains all of our antibodies, it is effectively a "black box," since separating out and individually characterizing each antibody would require years of effort (by which point your antibody repertoire will have dramatically changed). In other words, our blood contains an unknown number of antibodies, and the protection offered by each of them against any virus strain is unknown.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Nevertheless, we can measure the <i>collective</i> protection from all the antibodies in your blood against different flu strains. But since each measurement requires some of your blood (an inherently limited commodity), we can only assess your protection against a few viruses, and from these measurements we must predict how you would fare against all other strains. But how can we possibly answer this question when we do not know the composition of your antibodies?
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('NeutMapsImage3')" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseThree" aria-expanded="false" aria-controls="NeutMapsCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Let's Use a Map
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingThree">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										My answer was to create a "map" of all possible antibody-virus interactions. The example data on the right quantifies the protection of three antibodies against three viruses. These nine interactions are mapped onto the grid shown below, where antibodies that strongly protect against a virus will lie close to it on the map (within 2 grid units) whereas antibodies that offer weak protection lie further away (more than 4 grid units). See if you can convince yourself that the table of values matches the map results.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										The power of this approach becomes apparent when we scale up the number of viruses and antibodies. Each year, hundreds of different viruses are assessed against hundreds of different antibodies. Rather than looking at a spreadsheet containing ten thousand values, we can create a map that allows us to quantify and visualize the key players. But perhaps the most useful application of these maps is in our ability to decompose our antibody repertoire.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('NeutMapsImage4')" role="button" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseFour" aria-expanded="false" aria-controls="NeutMapsCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Decomposing an Antibody Repertoire
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingFour">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										Suppose that we have created a map of all the flu strains circulating this year (shown below on the right). To quantify your level of protection, we take a drop of your blood and measure its ability to inhibit a few of these viruses (e.g. the light-blue, light-green, and light-gray strains). Using just those three measurements (shown in the table), can you guess how protected you will be against the remaining viruses?
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Take a moment to think this through. Remember that we do not know how many antibodies there are within your blood, but we can translate the information that we have into our map. Strong protection against a virus means that there must be an antibody nearby. So where would you predict your antibodies reside on the map? And given their positions, can you predict your level of protection against the other viruses on the map?
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('NeutMapsImage5')" role="button" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseFive" aria-expanded="false" aria-controls="NeutMapsCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Quantifying the Human Response
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingFive">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										At minimum there must be antibodies near the light-green and light-gray viruses, and using that information can predict your protection against the other viruses. Granted, there may be more antibodies lurking in other regions of the map, but our ability to detect them grows with the number of measurements we have, and they can only increase your protection.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Our ability to say so much using only a few measurements is remarkable, given that we did not know how many antibodies there should be nor their individual protection profiles! So where did the information come from...? It came from the positions of the viruses on the map. An antibody can inhibit two viruses that lie close to one another, but not two viruses that are far apart. Thus, when your blood strongly inhibits two dissimilar viruses, we know that at least two antibodies must be at work.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This approach provides a new tool to peer into our immune repertoires and characterize our individual antibodies - something that I would have thought impossible a year ago. <a href="https://doi.org/10.1101/2020.08.28.270561">This work</a> has opened up an array of fascinating questions such as: How far can our antibodies move along the map (i.e. change their protection profile) with each infection? Can an antibody be "guided" to a specific location? How are our antibody repertoires reshaped over the course of our lives? Given your specific antibodies, which vaccine strain would best augment your protection? Like any innovation, this one opens up many new and exciting roads that I cannot wait to travel!
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#NeutMapsImage1"></a>
+					<a data-toggle="tab" href="#NeutMapsImage2"></a>
+					<a data-toggle="tab" href="#NeutMapsImage3"></a>
+					<a data-toggle="tab" href="#NeutMapsImage4"></a>
+					<a data-toggle="tab" href="#NeutMapsImage5"></a>
+
+					<!-- The different images that appear on the side -->
+					<div class="tab-content">
+						<div id="NeutMapsImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg1.png" width="350" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage2" class="tab-pane fade">
+							
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+							
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg2.png" width="640" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg3.png" width="360" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg4.png" width="360" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg5.png" width="360" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+
 	
 	
 	<!-- about -->
@@ -187,7 +392,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="panel-body panel_text">
 
 									<p>
-										For my postdoc, I decided to shift lanes and apply my biophysics training to the realm of disease research. I joined the <a href="https://research.fhcrc.org/bloom/en.html">Jesse Bloom lab</a> which studies how the influenza virus (a.k.a. flu) can evolve to escape from the antibodies that circulate within us.
+										For my postdoc, I decided to shift lanes and apply my biophysics training to the realm of disease research. I joined the lab of <a href="https://research.fhcrc.org/bloom/en.html">Jesse Bloom</a> that studies how the influenza virus (a.k.a. flu) can evolve to escape from the antibodies that circulate within us.
 									</p>
 
 									<!-- Create some vertical space -->
@@ -221,7 +426,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="col-xs-0" style="height:10px;"></div>
 
 									<p>
-										This response embodies a philosophical difference between biology and physics. Biology embraces the unique and breathtaking complexity of life, and the breadth of phenotypes is often of greatest interest. Physics promotes simple and unifying models, which can quantitatively describe key aspects of a system, but which might ignore some of its more nuanced behavior (think of the spherical cow analogy). Whether this tradeoff is worthwhile might be a matter of taste, but it explains why a physicist yearns for quantitation, since any quantitative model will ultimately require a few key numbers.
+										This response embodies a philosophical difference between biology and physics. Biology embraces the unique and breathtaking complexity of life, and the breadth of phenotypes is often of greatest interest. Physics promotes simple and unifying models, which can quantitatively describe key aspects of a system, but which might ignore some of its more nuanced behavior (think of the spherical cow analogy). Whether this tradeoff is worthwhile might be a matter of taste, but it explains why physicists yearn for key numbers in order to build quantitative models.
 									</p>
 
 									<!-- Create some vertical space -->
@@ -280,14 +485,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div id="SnapShotCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="SnapShotHeadingFour">
 								<div class="panel-body panel_text">
 									<p>
-										To answer these types of questions, I read broadly on many aspects of flu biology, gathering numbers from all contexts. How many antibodies do we make when we get sick with the flu? What experiments can measure how well these antibodies defend us? How many total virions are produced during an infection and how many of our cells do they destroy?
+										To answer these types of questions, I read broadly on many aspects of flu biology, gathering numbers from all contexts. How many virions are produced during an infection and how many of our cells do they destroy? How many antibodies do we produce when we get infected by flu? How can we quantify the protection offered by our antibodies? 
 									</p>
 
 									<!-- Create some vertical space -->
 									<div class="col-xs-0" style="height:10px;"></div>
 									
 									<p>
-										As I gathered these numbers, they naturally coalesced into different sectors of flu biology. As a fun mini-project, I decided to combine these into a 1-page graphical illustration (slated for a <a href="https://www.cell.com/snapshots">Cell SnapShot</a>) representing the key numbers underlying the mechanism of influenza infection and our antibody response against the virus. This SnapShot is targeted at influenza researchers who are specialists in one aspect of flu biology but would like a 30,000-foot view of some of its other characteristics.
+										As I gathered these numbers, they naturally coalesced into different sectors of flu biology. As a fun mini-project, I decided to combine these into a 1-page graphical illustration (published as a <a href="https://github.com/TalEinav/InfluenzaSnapshot">Cell SnapShot</a>) representing the key numbers underlying the mechanism of influenza infection and our antibody response against the virus. This SnapShot is targeted at influenza researchers who are specialists in one aspect of flu biology but would like a 30,000-foot view of some of its other characteristics.
 									</p>
 								</div>
 							</div>
@@ -314,14 +519,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<div class="col-xs-0" style="height:10px;"></div>
 										
 									<p>
-										As a fun example, the influenza virion in the center of the SnapShot was made in Mathematica, which meant that we could easily look at hundreds of different variants and choose the one that looked the best. The pictures to the left display some of the more artistically interesting variants that emerged!
+										As a fun example, the influenza virion in the center of the SnapShot was made in Mathematica, which meant that we could generate hundreds of variants and choose the one that looked the best. The pictures to the left display some of the more artistically interesting virions that emerged!
 									</p>
 									
 									<!-- Create some vertical space -->
 									<div class="col-xs-0" style="height:10px;"></div>
 										
 									<p>
-										As with any project, this one could not have been done without the help of many colleagues. I spent hours discussing the content and layout with Lauren Gentles, a terrific graduate student in our lab, and Jesse Bloom's feedback was instrumental in ensuring our scientific accuracy. As always, we sent this work to numerous colleagues, and it was a huge privilege to have them take time out of their busy schedules and provide their input. You can find the final version of the SnapShot, representing all of our collective hard work, at <a href="https://www.cell.com/snapshots">this link</a>.
+										As with any project, this one could not have been done without the help of many colleagues. I spent hours discussing the content and layout with Lauren Gentles, a terrific graduate student in our lab, and Jesse Bloom's feedback was instrumental in ensuring our scientific accuracy. You can find the final version of the SnapShot, representing all of our collective hard work, at <a href="https://doi.org/10.1016/j.cell.2020.05.004">this link</a>.
 									</p>
 								</div>
 							</div>
@@ -341,7 +546,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="team">
 		<div class="container">
 			<h3 class="animated wow zoomIn" data-wow-delay="0s">What is it like to do a PhD? Reflections on the Past Six Years</h3>
-			<p class="qui animated wow zoomIn" data-wow-delay="0s" style="color: rgb(0, 0, 0)">"The best thesis defense is a good thesis offense." - xkcd</p>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s" style="color: rgb(0, 0, 0)">"The best thesis defense is a good thesis offense." - XKCD</p>
 			<div class="about-grids">
 				<div class="col-md-6 about-grids-left">
 					<div class="panel-group" id="ThesisAccordion" role="tablist" aria-multiselectable="true">
