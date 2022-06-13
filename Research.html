@@ -119,6 +119,209 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //banner -->
 
 
+	<!-- about -->
+	<div class="about">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">The "Magic" of Matrix Completion</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s">"Do not underestimate the seductive power of math." - Rachel Hartman</p>
+			<div class="about-grids">
+
+
+				<div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#MatrixCompletionImage1"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage2"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage3"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage4"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage5"></a>
+
+
+
+					<div class="tab-content">
+						<div id="MatrixCompletionImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg1.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage2" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg3.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg3.2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg5.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="MatrixCompletionAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('MatrixCompletionImage1')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseOne" aria-expanded="true" aria-controls="MatrixCompletionCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Expanding Datasets without any Additional Measurements
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="MatrixCompletionHeadingOne">
+								<div class="panel-body panel_text">
+
+									<p>
+										A central goal of immunology research is to elicit a potent antibody response that can inhibit as many viruses as possible, ideally leaving a virus with no opportunities to mutate and escape. Experiments often measure how antibodies inhibit dozens of different viruses. 
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Unfortunately, this constitutes a <i>tiny</I> fraction of all possible viruses - each year hundreds of new variants emerge and join the worldwide melee. When researchers seek antibodies that can comprehensively inhibit the whole gamut of viruses, they end up choosing a set of viruses with little-to-no overlap with the virus from other studies. This makes it difficult to combine the information between studies, and each dataset often ends up being analyzed in isolation and then forgotten.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										What we need is a way to massively expand each dataset by predict how every antibody would inhibit many new viruses. Is this possible...?   
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage2')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseTwo" aria-expanded="false" aria-controls="MatrixCompletionCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The Extensive Diversity of Viruses
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingTwo">
+								<div class="panel-body panel_text">
+									<p>
+										Indeed it is! When we combine datasets together, we can predict how the antibodies in one dataset would inhibit the viruses from <i>any other dataset</i>. With this mindset, the different virus panels in each study are not a weakness,  but rather an asset allowing us to explore the space of all possible viruses more fully.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										The implications are huge - each experiment takes significant time and resources, and by combining datasets we can massively expand the number of measurements in study by 10x or more. New datsets would be immediately expanded by old studies, and they would expand those old studies in return. We would form a network containing our cumulative knowledge.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage3')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseThree" aria-expanded="false" aria-controls="MatrixCompletionCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Combining Datasets is Hard
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingThree">
+								<div class="panel-body panel_text">
+									<p>
+										Of course, things are not that easy. Biology is riddled with <a href="https://doi.org/10.1016/j.celrep.2014.02.021">anecdotes</a> highlighting that tiny differences in a protocol can lead to dramatically different results, so different datasets may have systematic differences that hamper combining them. Moreover, there is also immense diversity among antibodies, and the patterns between viruses in one dataset may not be reflected in another dataset. 
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+									
+									<p>
+										To overcome this difficulty, we develop a machine learning algorithm to quantify the transferability of information between two datasets. When two studies are very similar (i.e. if the blue viruses in the schematic behave the same in Dataset 1 and 2), then we can be confident that the relationship between the blue-and-green viruses can be transferred from Dataset 2→1 (and similarly for the blue-and-gray viruses from Dataset 1→2). In other words, we not only predict the behavior of new viruses, but also quantify our uncertainty for these predictions.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage4')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseFour" aria-expanded="false" aria-controls="MatrixCompletionCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>So Where's the Catch?
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingFour">
+								<div class="panel-body panel_text">
+									<p>
+										The only caveat is that there must be at least 5 viruses that overlap between two studies in order to predict new virus behavior. Once that is achieved, both datasets can be expanded to predict values for all viruses in each study (without requiring a single additional measurement). Thus, modern studies can easily tap into the many large-scale studies carried out in the past decades, enabling them to leverage these past results to probe the antibody-virus landscape at far greater resolution.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+									
+									<p>
+										Although the scale and scope of experiments has exponentially increased, the way we analyze experiments has stayed relatively constant for the past decades. Our data-driven technique presents a powerful method to aggregate and expand datasets. More information can be found on the <a href="https://doi.org/10.1101/2022.06.09.495425">bioRxiv</a>.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage5')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseFive" aria-expanded="false" aria-controls="MatrixCompletionCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Just Scratching the Surface
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingFive">
+								<div class="panel-body panel_text">
+									<p>
+										Of course, this is just the beginning. One of the perks of being a computational biologist is that you some of your projects are truly cross-disciplinary, and this framework certainly fits that mold. While it opens up many exciting avenues in influenza research, it can certainly be applied to other viruses, or more generally to other low-dimensional datasets.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+										
+									<p>
+										I predict that the main limitation to such data-driven approaches will be our creativity, in where and how we apply these frameworks. If you have ideas on how to use these approaches, feel free to contact me, and I would be happy to discuss this "mathematical superpower."
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+
+
 
 	<!-- team -->
 	<div class="team">
