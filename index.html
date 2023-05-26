@@ -6,59 +6,66 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <html>
-<head>
-<title>Home</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Your Name, your field" />
-<link rel="shortcut icon" type="image/jpeg" href="https://taleinav.github.io/Other/Pictures/icon.png"
-/>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
-<script src="js/wow.min.js"></script>
-<script>
- new WOW().init();
-</script>
-<!-- //animation-effect -->
-<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
 
+<head>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Your Name, your field" />
+	<link rel="shortcut icon" type="image/jpeg" href="https://taleinav.github.io/Other/Pictures/icon.png"
+	/>
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- //js -->
+	<!-- animation-effect -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!-- //animation-effect -->
+	<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+	 rel='stylesheet' type='text/css'>
+
+	<!-- Personal java script to flip images on Research page -->
+	<script src="js/client.js"></script>
+
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
 </head>
-	
+
+
 <body>
-<!-- header -->
+	<!-- header -->
 	<div class="header">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"/>
+					<span class="icon-bar"/>
+					<span class="icon-bar"/>
+				</button>
 					<div class="logo">
 						<h1>
 							<a class="navbar-brand">T<font size="6">al</font> E<font size="6">inav</font></a>
@@ -70,11 +77,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--francisco">
 						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link"><span class="menu__helper">Teaching</span></a></li>
-							<li class="menu__item"><a href="Mathematica.html" class="menu__link"><span class="menu__helper">Mathematica</span></a></li>
-							<li class="menu__item"><a href="Research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
+							<li class="menu__item menu__item--current">
+								<a href="index.html" class="menu__link">
+									<span class="menu__helper">Research</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="Mathematica.html" class="menu__link">
+									<span class="menu__helper">Mathematica</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="Teaching.html" class="menu__link">
+									<span class="menu__helper">Teaching</span>
+								</a>
+							</li>
 							<li class="menu__item"><a href="Lab Philosophy.html" class="menu__link"><span class="menu__helper">Lab Philosophy</span></a></li>
-							<li class="menu__item"><a href="Personal Info.html" class="menu__link"><span class="menu__helper">About Me</span></a></li>
+							<li class="menu__item">
+								<a href="Personal Info.html" class="menu__link">
+									<span class="menu__helper">About Me</span>
+								</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -82,822 +105,2196 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</nav>
 		</div>
 	</div>
-<!-- //header -->
-<!-- banner -->
+	<!-- //header -->
+
+
+
+
+	<!-- banner -->
 	<div class="banner1">
 		<div class="container">
-			<h2 style="font-size: 3em" class="animated wow slideInLeft">Teaching<!--Resuscitation Sessions--></h2>
+			<h2 style="font-size: 3em" class="animated wow slideInLeft" data-wow-delay="0s">Manipulating Antibody-Virus Interactions via Machine Learning</h2>
 		</div>
 	</div>
-<!-- //banner -->
+	<!-- //banner -->
 
 
-	<div class="container">
-	  
-	  <!-- HOW TO EMBED CDF -->
-	  <!-- <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
-	  <script type="text/javascript">
-		var cdf = new cdfplugin();
-		cdf.setDefaultContent('<a href="http://www.wolfram.com/cdf-player/"><img  src="previewImage.png"></a>');
-		cdf.embed('Other/Notebooks/fileName.cdf', width, height);
-	  </script> -->
-	  
-      <!-- Example row of columns -->
-      <div class="row">
-				
-				<!-- Create some vertical space -->
-				<div class="col-xs-0" style="height:20px;"></div>
-				
-				<p class="qui animated wow zoomIn" data-wow-delay="0s"><i>Below are lecture notes from the freshman physics courses I taught at Caltech (2014-2019). Beyond explaining the concepts, I hope these notes illustrate that physics is not about applying the right equation or following some recipe, but rather about building intuition - checking limiting cases, using symmetry, solving problems in multiple ways - so that you do not simply end up with an answer, but rather end up with the confidence to know that your answer is correct.</i></p>
-
-	  <!-- Create some vertical space -->
-	  <div class="col-xs-0" style="height:40px;"></div>
-        
-		<div class="col-md-6">
-		  <center><img src="Other\Pictures\Lecture Pics\rollJoke.png" height="300"></center>
-		  <div class="col-xs-0" style="height:10px;"></div>
-		  <div class="col-md-16 about-grids-right animated wow slideInRight" data-wow-delay="0s">
-                <h2>Classical Mechanics</h2>
-          </div>
-		  
-		  <div class="col-xs-0" style="height:20px;"></div>
-		  
-		  <ul class="nav nav-tabs">
-			<li role="presentation" class="active"><a data-toggle="tab" href="#home">PDF Format</a></li>
-			<li role="presentation"><a data-toggle="tab" href="#menu1">Mathematica Notebook</a></li>
-		  </ul>
-		  
-		  <!-- <ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#home">PDF Format</a></li>
-			<li><a data-toggle="tab" href="#menu1">Mathematica Notebook</a></li>
-		  </ul>
-		   -->
-		   
-		   
-		  <center>
-		  <div class="tab-content">
-				<div id="home" class="tab-pane fade in active">
-				  <table class="table table-striped table-bordered">
-					
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\2a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 1 - 2017-09-28.pdf">Lecture 1: Vectors</a>
-							<!-- Lecture 1: Vectors -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\3a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 2 - 2017-10-02.pdf">Lecture 2: Force</a>
-							<!-- Lecture 2: Force -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\4a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 3 - 2017-10-05.pdf">Lecture 3: Torque</a>
-							<!-- Lecture 3: Torque -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\5a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 4 - 2017-10-09.pdf">Lecture 4: Puzzling Problems</a>
-							<!-- Lecture 4: Puzzling Problems -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\6a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 5 - 2017-10-12.pdf">Lecture 5: Rotating Reference Frames</a>
-							<!-- Lecture 5: Rotating Reference Frames -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\7a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 6 - 2017-10-16.pdf">Lecture 6: Energy</a>
-							<!-- Lecture 6: Energy -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\8a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 7 - 2017-10-19.pdf">Lecture 7: Momentum</a>
-							<!-- Lecture 7: Momentum -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\9a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 8 - 2017-10-23.pdf">Lecture 8: Angular Momentum</a>
-							<!-- Lecture 8: Angular Momentum -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\10a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 9 - 2017-10-26.pdf">Lecture 9: Rotational Dynamics</a>
-							<!-- Lecture 9: Rotational Dynamics -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\11a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 10 - 2017-10-30.pdf">Lecture 10: Moment of Inertia</a>
-							<!-- Lecture 10: Moment of Inertia -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\12a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 11 - 2017-11-02.pdf">Lecture 11: Advanced Rotational Dynamics</a>
-							<!-- Lecture 11: Advanced Rotational Dynamics -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\13a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 12 - 2017-11-06.pdf">Lecture 12: Oscillations</a>
-							<!-- Lecture 12: Oscillations -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\14a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 13 - 2017-11-09.pdf">Lecture 13: Rotation Wrap-Up</a>
-							<!-- Lecture 13: Rotation Wrap-Up -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\15a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 14 - 2017-11-13.pdf">Lecture 14: Orbits I</a>
-							<!-- Lecture 14: Orbits I -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\16a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 15 - 2017-11-16.pdf">Lecture 15: Orbits II</a>
-							<!-- Lecture 15: Orbits II -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\17a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 16 - 2017-11-20.pdf">Lecture 16: Fluids</a>
-							<!-- Lecture 16: Fluids -->
-						</td>
-						</tr>
-						<tr>
-							<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\17av2.png" height="100"></th>
-							<td style="vertical-align:middle">
-								<a href="Lectures\Ph 1a\Lecture 17 - 2017-11-27.pdf">Lecture 17: Gyroscopes</a>
-								<!-- Lecture 17: Gyroscopes -->
-							</td>
-							</tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\18a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 18 - 2017-12-01.pdf">Lecture 18: Final Review</a>
-							<!-- Lecture 18: Final Review -->
-						</td>
-						</tr>
-						<tr class="warning">
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\19a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Make It Count - Advice for the Final.pdf">Advice for the Final</a>
-							<!-- Lecture 19: Final Post-Review -->
-						</td>
-					  </tr>
-					  <tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\20a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Math Boot Camp - Coordinate Systems.pdf">Math Bootcamp: Coordinate Systems</a>
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1a\Math Boot Camp - Coordinate Unit Vectors.pdf">Math Bootcamp: Coordinate Unit Vectors</a>
-							<!-- Math Bootcamp -->
-						</td>
-					</tr>
-					  <tr class="warning">
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\21a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Useful Formulas.pdf">Useful Formulas</a>
-							<!-- Useful Formulas -->
-						</td>
-					 </tr>
-				 </table>
-				</div>
-				<div id="menu1" class="tab-pane fade">
-				  <table class="table table-striped table-bordered">
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\2a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 1 - 2017-09-28.nb" download>Lecture 1: Vectors</a>
-							<!-- Lecture 1: Vectors -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\3a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 2 - 2017-10-02.nb" download>Lecture 2: Force</a>
-							<!-- Lecture 2: Force -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\4a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 3 - 2017-10-05.nb" download>Lecture 3: Torque</a>
-							<!-- Lecture 3: Torque -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\5a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 4 - 2017-10-09.nb" download>Lecture 4: Puzzling Problems</a>
-							<!-- Lecture 4: Puzzling Problems -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\6a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 5 - 2017-10-12.nb" download>Lecture 5: Rotating Reference Frames</a>
-							<!-- Lecture 5: Rotating Reference Frames -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\7a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 6 - 2017-10-16.nb" download>Lecture 6: Energy</a>
-							<!-- Lecture 6: Energy -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\8a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 7 - 2017-10-19.nb" download>Lecture 7: Momentum</a>
-							<!-- Lecture 7: Momentum -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\9a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 8 - 2017-10-23.nb" download>Lecture 8: Angular Momentum</a>
-							<!-- Lecture 8: Angular Momentum -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\10a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 9 - 2017-10-26.nb" download>Lecture 9: Rotational Dynamics</a>
-							<!-- Lecture 9: Rotational Dynamics -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\11a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 10 - 2017-10-30.nb" download>Lecture 10: Moment of Inertia</a>
-							<!-- Lecture 10: Moment of Inertia -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\12a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 11 - 2017-11-02.nb" download>Lecture 11: Advanced Rotational Dynamics</a>
-							<!-- Lecture 11: Advanced Rotational Dynamics -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\13a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 12 - 2017-11-06.nb" download>Lecture 12: Oscillations</a>
-							<!-- Lecture 12: Oscillations -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\14a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 13 - 2017-11-09.nb" download>Lecture 13: Rotation Wrap-Up</a>
-							<!-- Lecture 13: Rotation Wrap-Up -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\15a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 14 - 2017-11-13.nb" download>Lecture 14: Orbits I</a>
-							<!-- Lecture 14: Orbits I -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\16a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 15 - 2017-11-16.nb" download>Lecture 15: Orbits II</a>
-							<!-- Lecture 15: Orbits II -->
-						</td>
-					  </tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\17a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 16 - 2017-11-20.nb" download>Lecture 16: Fluids</a>
-							<!-- Lecture 16: Fluids -->
-						</td>
-						</tr>
-						<tr>
-							<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\17av2.png" height="100"></th>
-							<td style="vertical-align:middle">
-								<a href="Lectures\Ph 1a\Lecture 17 - 2017-11-27.nb" download>Lecture 17: Gyroscopes</a>
-								<!-- Lecture 17: Gyroscopes -->
-							</td>
-							</tr>
-					  <tr>
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\18a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Lecture 18 - 2017-12-01.nb" download>Lecture 18: Final Review</a>
-							<!-- Lecture 18: Final Review -->
-						</td>
-					  </tr>
-					  <tr>
-						<tr class="warning">
-							<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\19a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Make It Count - Advice for the Final.pdf">Advice for the Final</a>
-							<!-- Advice for the Final -->
-						</td>
-					  </tr>
-					  <tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\20a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Math Boot Camp - Coordinate Systems.nb" download>Math Bootcamp: Coordinate Systems</a>
-							<!-- Math Bootcamp: Coordinate Systems -->
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1a\Math Boot Camp - Coordinate Unit Vectors.nb" download>Math Bootcamp: Coordinate Unit Vectors</a>
-							<!-- Math Bootcamp: Coordinate Unit Vectors -->
-						</td>
-					</tr>
-					  <tr class="warning">
-						<th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\21a.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1a\Useful Formulas.pdf">Useful Formulas</a>
-							<!-- Useful Formulas -->
-						</td>
-					  </tr>
-				 </table>
-				</div>
-		  </div>
-		 </center>
-		</div>
-        
-<div class="col-md-6">
-          
-		  <center><img src="Other\Pictures\Lecture Pics\electricity.jpg" height="300"></center>
-		  <div class="col-xs-0" style="height:10px;"></div>
-		  <div class="col-md-16 about-grids-right animated wow slideInRight" data-wow-delay="0s">
-                <h2>Electricity and Magnetism</h2>
-          </div>
-		  
-		  <div class="col-xs-0" style="height:20px;"></div>
-		  
-		  <ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#home2">PDF Format</a></li>
-			<li><a data-toggle="tab" href="#menu2">Mathematica Notebook</a></li>
-		  </ul>
-		  
-		  <!-- <ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#home2">PDF Format</a></li>
-			<li><a data-toggle="tab" href="#menu2">Mathematica Notebook</a></li>
-		  </ul> -->
-		  
-		  <center>
-		  <div class="tab-content">
-				<div id="home2" class="tab-pane fade in active">
-				  <table class="table table-striped table-bordered">
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\1b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 1 - 01-10-2019.pdf">Lecture 1: Special Relativity - Time Dilation</a>
-							<!-- Lecture 1: Special Relativity - Time Dilation -->
-						</td>
-					  </tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\2b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 2 - 01-14-2019.pdf">Lecture 2: Special Relativity - Length Contraction</a>
-							<!-- Lecture 2: Special Relativity - Length Contraction -->
-						</td>
-					  </tr> 
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\3b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 3 - 01-17-2019.pdf">Lecture 3: Special Relativity - Lorentz Transformations</a>
-							<!-- Lecture 3: Special Relativity - Lorentz Transformations -->
-						</td>
-					  </tr> 
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\4b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 4 - 01-21-2019.pdf">Lecture 4: Special Relativity - Velocity Addition</a>
-							<!-- Lecture 4: Special Relativity - Velocity Addition -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\5b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 5 - 01-24-2019.pdf">Lecture 5: Special Relativity - Energy, Momentum, and Collisions</a>
-							<!-- Lecture 5: Special Relativity - Energy, Momentum, and Collisions -->
-						</td>
-					  </tr>	  
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\6b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 6 - 01-28-2019.pdf">Lecture 6: Coulomb Force</a>
-							<!-- Lecture 6: Coulomb Force -->
-						</td>
-					  </tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\7b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 7 - 01-31-2019.pdf">Lecture 7: Electric Field</a>
-							<!-- Lecture 7: Electric Field -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\8b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 8 - 02-04-2019.pdf">Lecture 8: Gauss’s Law</a>
-							<!-- Lecture 8: Gauss’s Law -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\9b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 9 - 02-07-2019.pdf">Lecture 9: Electrostatics Problems</a>
-							<!-- Lecture 9: Electrostatics Problems -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\10b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 10 - 02-11-2019.pdf">Lecture 10: Electric Potential</a>
-							<!-- Lecture 10: Electric Potential -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\11b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 11 - 02-14-2019.pdf">Lecture 11: Potential Problems</a>
-							<!-- Lecture 11: Potential Problems -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\12b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 12 - 02-18-2019.pdf">Lecture 12: Conductors</a>
-							<!-- Lecture 12: Conductors -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\13b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 13 - 02-21-2019.pdf">Lecture 13: Electrostatics Recap</a>
-							<!-- Lecture 13: Electrostatics Recap -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\14b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 14 - 02-25-2019.pdf">Lecture 14: Capacitors</a>
-							<!-- Lecture 14: Capacitors -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\15b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 15 - 02-28-2019.pdf">Lecture 15: Current</a>
-							<!-- Lecture 15: Current -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\16b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 16 - 03-04-2019.pdf">Lecture 16: Circuits</a>
-							<!-- Lecture 16: Circuits -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\17b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 17 - 03-07-2019.pdf">Lecture 17: The Secrets of Electricity</a>
-							<!-- Lecture 17: The Secrets of Electricity -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\18b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Quiz 1 Review - 2019-01-26.pdf">Quiz 1 Review: Special Relativity</a>
-							<!-- Quiz 1 Review: Special Relativity -->
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Quiz 3 Review - 2019-02-23.pdf">Quiz 3 Review: Electricity</a>
-							<!-- Quiz 3 Review: Electricity -->
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Final Review - 2019-03-15.pdf">Final Review: The Whole Shabang</a>
-							<!-- Final Review: The Whole Shabang -->
-						</td>
-					</tr>					
-					<tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\19b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Relativity Questions and Answers.pdf">Relativity Questions and Answers</a>
-							<!-- Relativity Questions and Answers -->
-						</td>
-					</tr>    
-					<tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\20b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Math Boot Camp - Volume Elements.pdf">Math Bootcamp: Volume Elements</a>
-							<!-- Math Bootcamp: Volume Elements -->
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Math Boot Camp - Integration.pdf">Math Bootcamp: Multivariable Integration</a>
-							<!-- Math Bootcamp: Multivariable Integration -->
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Math Boot Camp - Div Grad Curl.pdf">Math Bootcamp: Div, Grad, Curl</a>
-							<!-- Math Bootcamp: Div, Grad, Curl -->
-							
-							<!-- Math Bootcamp -->
-						</td>
-					</tr>
-					<tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\21b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Useful Formulas.pdf">Useful Formulas</a>
-							<!-- Useful Formulas -->
-						</td>
-					</tr>
-				 </table>
-				</div>
-				<div id="menu2" class="tab-pane fade">
-				  <table class="table table-striped table-bordered">
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\1b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 1 - 01-10-2019.nb" download>Lecture 1: Special Relativity - Time Dilation</a>
-							<!-- Lecture 1: Special Relativity - Time Dilation -->
-						</td>
-					  </tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\2b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 2 - 01-14-2019.nb" download>Lecture 2: Special Relativity - Length Contraction</a>
-							<!-- Lecture 2: Special Relativity - Length Contraction -->
-						</td>
-					  </tr> 
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\3b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 3 - 01-17-2019.nb" download>Lecture 3: Special Relativity - Lorentz Transformations</a>
-							<!-- Lecture 3: Special Relativity - Lorentz Transformations -->
-						</td>
-					  </tr> 
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\4b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 4 - 01-21-2019.nb" download>Lecture 4: Special Relativity - Velocity Addition</a>
-							<!-- Lecture 4: Special Relativity - Velocity Addition -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\5b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 5 - 01-24-2019.nb" download>Lecture 5: Special Relativity - Energy, Momentum, and Collisions</a>
-							<!-- Lecture 5: Special Relativity - Energy, Momentum, and Collisions -->
-						</td>
-					  </tr>	  
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\6b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 6 - 01-28-2019.nb" download>Lecture 6: Coulomb Force</a>
-							<!-- Lecture 6: Coulomb Force -->
-						</td>
-					  </tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\7b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 7 - 01-31-2019.nb" download>Lecture 7: Electric Field</a>
-							<!-- Lecture 7: Electric Field -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\8b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 8 - 02-04-2019.nb" download>Lecture 8: Gauss’s Law</a>
-							<!-- Lecture 8: Gauss’s Law -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\9b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 9 - 02-07-2019.nb" download>Lecture 9: Electrostatics Problems</a>
-							<!-- Lecture 9: Electrostatics Problems -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\10b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 10 - 02-11-2019.nb" download>Lecture 10: Electric Potential</a>
-							<!-- Lecture 10: Electric Potential -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\11b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 11 - 02-14-2019.nb" download>Lecture 11: Potential Problems</a>
-							<!-- Lecture 11: Potential Problems -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\12b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 12 - 02-18-2019.nb" download>Lecture 12: Conductors</a>
-							<!-- Lecture 12: Conductors -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\13b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 13 - 02-21-2019.nb" download>Lecture 13: Electrostatics Recap</a>
-							<!-- Lecture 13: Electrostatics Recap -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\14b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 14 - 02-25-2019.nb" download>Lecture 14: Capacitors</a>
-							<!-- Lecture 14: Capacitors -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\15b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 15 - 02-28-2019.nb" download>Lecture 15: Current</a>
-							<!-- Lecture 15: Current -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\16b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 16 - 03-04-2019.nb" download>Lecture 16: Circuits</a>
-							<!-- Lecture 16: Circuits -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\17b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Lecture 17 - 03-07-2019.nb" download>Lecture 17: The Secrets of Electricity</a>
-							<!-- Lecture 17: The Secrets of Electricity -->
-						</td>
-					</tr>
-					<tr>
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\18b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Quiz 1 Review - 2019-01-26.nb">Quiz 1 Review: Special Relativity</a>
-							<!-- Quiz 1 Review: Special Relativity -->
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Quiz 3 Review - 2019-02-23.nb">Quiz 3 Review: Electricity</a>
-							<!-- Quiz 3 Review: Electricity -->
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Final Review - 2019-03-15.nb">Final Review: The Whole Shabang</a>
-							<!-- Final Review: The Whole Shabang -->
-						</td>
-					</tr>					
-					<tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\19b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Relativity Questions and Answers.pdf">Relativity Questions and Answers</a>
-							<!-- Relativity Questions and Answers -->
-						</td>
-					</tr>    
-					<tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\20b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Math Boot Camp - Volume Elements.nb" download>Math Bootcamp: Volume Elements</a>
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Math Boot Camp - Integration.nb" download>Math Bootcamp: Multivariable Integration</a>
-							<div class="col-xs-0" style="height:10px;"></div>
-							<a href="Lectures\Ph 1b\Math Boot Camp - Div Grad Curl.nb" download>Math Bootcamp: Div, Grad, Curl</a>
-							
-							<!-- Math Bootcamp -->
-						</td>
-					</tr>
-					<tr class="warning">
-					    <th class="text-center" width="150"><img src="Other\Pictures\Lecture Pics\21b.png" height="100"></th>
-						<td style="vertical-align:middle">
-							<a href="Lectures\Ph 1b\Useful Formulas.pdf">Useful Formulas</a>
-							<!-- Useful Formulas -->
-						</td>
-					</tr>
-				 </table>
-				</div>
-		  </div>
-		 </center>
-		  
-        </div>
-      </div>
-    </div> <!-- /container -->
-
-
-<!-- Create some vertical space -->
-<div class="col-xs-0" style="height:40px;"></div>
-
-
-<!-- footer -->
-<div class="footer"><a name="CONTACT"></a>
+	<!-- about -->
+	<div class="about">
 		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
-                    <h3>Contact</h3>
-                    <p>Email: teinav &alpha; fredhutch.org</p>
-                    <p>Office: Weintraub A3-209</p>
-					<!-- <div class="social">
-						<ul class="social-nav model-8">
-							<li><a href="#" class="facebook"><i></i></a></li>
-							<li><a href="#" class="twitter"><i> </i></a></li>
-							<li><a href="#" class="g"><i></i></a></li>
-							<li><a href="#" class="p"><i></i></a></li>
-						</ul>
-					</div> -->
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Unlocking Unlimited Data</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s">"Do not underestimate the seductive power of math." - Rachel Hartman</p>
+			<div class="about-grids">
+
+
+				<div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#MatrixCompletionImage1"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage2"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage3"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage4"></a>
+					<a data-toggle="tab" href="#MatrixCompletionImage5"></a>
+
+
+
+					<div class="tab-content">
+						<div id="MatrixCompletionImage1" class="tab-pane fade in active">
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+							
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg1.png" width="340" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage2" class="tab-pane fade">
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:120px;"></div>
+							
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage3" class="tab-pane fade">
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:200px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg3.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage4" class="tab-pane fade">
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:200px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MatrixCompletionImage5" class="tab-pane fade">
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:300px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\MatrixCompletionImg5.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
 				</div>
-                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
-                    <br><br><br>
-                    <p>Mail: 1100 Fairview Ave N</p>
-                    <p>Bloom Lab B3-123; MC A3-020</p>
-                    <p>Seattle, WA 98109</p>
-                </div>
-				
-				
-				<!-- Create some vertical space -->
-				<div class="col-xs-0" style="height:200px;"></div>
-				
-				<div class="col-md-8 footer-grid animated wow slideInLeft" data-wow-delay="0s">
-					<p>  &copy; Tal Einav Awesome Corporation 
-						<script language="javascript" type="text/javascript">
-						var today = new Date()
-						var year = today.getFullYear()
-						document.write(year)
-						</script>
-					 - Creating Gamechangers
-					</p>
+
+
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="MatrixCompletionAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('MatrixCompletionImage1')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseOne" aria-expanded="true" aria-controls="MatrixCompletionCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The Extensive Diversity of Viruses
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="MatrixCompletionHeadingOne">
+								<div class="panel-body panel_text">
+
+									<p>
+										A central goal of immunology research is to elicit a potent antibody response that inhibits as many viruses as possible, ideally leaving a virus with no opportunities to mutate and escape. Experiments often measure how antibodies inhibit dozens of different viruses. 
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Unfortunately, this constitutes a <i>tiny</I> fraction of all possible viruses - each year hundreds of new variants emerge and join the worldwide melee. When researchers seek antibodies that comprehensively inhibit the whole gamut of viruses, they often choose variants that have little-to-no overlap with other studies. This makes it difficult to compare antibody responses across studies, and each dataset ends up being analyzed in isolation.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										What we need is a framework that learns the underlying patterns in the data and extrapolates how every antibody would inhibit each virus. Is this possible...?
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage2')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseTwo" aria-expanded="false" aria-controls="MatrixCompletionCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Massively Expanding Datasets
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingTwo">
+								<div class="panel-body panel_text">
+									<p>
+										Indeed it is! By combining data, we can predict how the antibodies in one dataset would inhibit the viruses from <i>any other dataset</i>. With this mindset, the different virus panels in each study are not a weakness,  but rather an asset allowing us to better explore the space of possible viruses.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										The implications are huge - each experiment takes significant time and resources, and by combining datasets we can massively expand the number of measurements, often by more than 10x, without any additional work!
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage3')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseThree" aria-expanded="false" aria-controls="MatrixCompletionCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Quantifying the Transferability between Datasets
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingThree">
+								<div class="panel-body panel_text">
+									<p>
+										Of course, things are not that easy. Biology is riddled with <a href="https://doi.org/10.1016/j.celrep.2014.02.021">anecdotes</a> highlighting how tiny differences in a protocol can lead to dramatically different results. Even without such errors, there is immense diversity among antibodies, so the patterns of virus inhibition seen in one dataset may not be reflected in another dataset. 
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+									
+									<p>
+										To overcome this difficulty, we develop a machine learning algorithm to quantify the <i>transferability</i> of information between two datasets. In other words, how does the behavior of viruses in one study inform the behavior of viruses in another study? We display the transferability using a chord diagram, which is visually striking but a bit tricky to interpret the first time you see it. So let's look at one specific study...
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage4')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseFour" aria-expanded="false" aria-controls="MatrixCompletionCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Which Features Distinguish the Antibody Response
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingFour">
+								<div class="panel-body panel_text">
+									<p>
+										Each band in the diagram represents a double-sided arrow, where a thicker band implies greater transferability. Study 1 is highly informative of Study 2 (and vice versa), whereas Study 1 and 3 are less informative of one another. Ferrets (shown in Study 7) turn out to be very different from humans, and we need to understand these relationships more deeply, since influenza surveillance is conducted using ferrets.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+									
+									<p>
+										One surprising result was that human vaccination studies (shown in blue) and human infection studies (green) can have high transferability, even though the participants in the infection studies had never received an influenza vaccine in their life! By quantifying the transferability between datasets, we can determine which factors (such as age or infection history) give rise to distinct antibody responses, and which factors don't matter.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MatrixCompletionHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MatrixCompletionImage5')" data-toggle="collapse" data-parent="#MatrixCompletionAccordion"
+									 href="#MatrixCompletionCollapseFive" aria-expanded="false" aria-controls="MatrixCompletionCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Just Scratching the Surface
+									</a>
+								</h4>
+							</div>
+							<div id="MatrixCompletionCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MatrixCompletionHeadingFive">
+								<div class="panel-body panel_text">
+									<p>
+										Of course, this is just the beginning. The power of this approach is that as we add more datasets, they are expanded by previous studies, but they also expand those studies in return. Thus, we grow a network that embodies the full extent of our knowledge on antibody-virus interactions.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+										
+									<p>
+										This data-driven approach can be readily expanded to other viruses, or more generally to other low-dimensional datasets. I predict that the main limitation of these methods will be in how creatively we will apply them. If you have any ideas, or are simply excited by this approach, feel free to contact me and I would be happy to discuss this "mathematical superpower." You can also read <a href="https://doi.org/10.1101/2022.06.09.495425">our manuscript</a> for more details.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+
+				<div class="clearfix"> </div>
 			</div>
-			
-			<div class="footer-grids1">
-				<div class="footer-grids1-left animated wow slideInLeft">
-          <ul>
-						<li class="active"><a href="index.html">Teaching</a></li>
-						<li><a href="Mathematica.html">Mathematica</a></li>
-						<li><a href="Research.html">Research</a></li>
-						<li><a href="Lab Philosophy.html">Lab Philosophy</a></li>
-						<li><a href="Personal Info.html">About Me</a></li>
-					</ul>
+		</div>
+	</div>
+	<!-- //about -->
+
+
+
+	<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Making Maps and Splitting Serum</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s" style="color: rgb(0, 0, 0)">"Still round the corner, there may wait, a new road or a secret gate." - J. R. R. Tolkien</p>
+			<div class="about-grids">
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="NeutMapsAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('NeutMapsImage1')" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseOne" aria-expanded="true" aria-controls="NeutMapsCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>What is Your Unique Level of Protection?
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="NeutMapsHeadingOne">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										When we get infected by a virus, we generate a vast array of antibodies to clear the infection. While most of these antibodies are ultimately degraded, a subset stick around as memory cells in case we encounter this same virus in the future. Hence, each of us has a unique antibody repertoire based on our specific infection history.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This brings us to a key question in immunology: What protection do <i>your</i> specific antibodies offer?
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										To be concrete, consider flu. Each year, hundreds of different strains of this virus circulate around the world and infect millions of people. This year, will you become sick from one of these viruses, or will your antibodies protect you?
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" id="firstTitleToggle" role="button" onclick="customClick('NeutMapsImage2')" data-toggle="collapse"
+									 data-parent="#NeutMapsAccordion" href="#NeutMapsCollapseTwo" aria-expanded="false" aria-controls="NeutMapsCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Will You Get Sick this Year?
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingTwo">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										This question is surprisingly difficult to answer! Although our blood contains all of our antibodies, it is effectively a "black box." To separate out and characterize each antibody would require years of effort (by which point your antibody repertoire will have dramatically changed). In other words, our blood contains an unknown number of antibodies, and the protection offered by each of them against any virus strain is unknown.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Nevertheless, we can measure the <i>collective</i> protection from all the antibodies in your blood against different flu strains. But since each measurement requires some of your blood (an inherently limited commodity), we can only assess your protection against a few viruses, and from these measurements we must predict how you would fare against all other strains. But how can we possibly answer this question when we do not know the composition of your antibodies?
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('NeutMapsImage3')" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseThree" aria-expanded="false" aria-controls="NeutMapsCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Mapping Your Immunity
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingThree">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										My answer was to create a "map" of all possible antibody-virus interactions. The example data on the right quantify the protection of three antibodies against three viruses. These nine interactions are mapped onto the grid shown below, where antibodies that strongly protect against a virus will lie close to it on the map (within 2 grid units) whereas antibodies that offer weak protection lie further away (more than 4 grid units). See if you can convince yourself that the table of values matches the map results.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										The power of this approach becomes apparent when we scale up the numbers. Each year, hundreds of different viruses are assessed against hundreds of different antibodies. Rather than looking at a spreadsheet containing ten thousand values, we can create a map that allows us to quantify and visualize the key players. But perhaps the most useful application of these maps is in the ability to decompose any antibody repertoire.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('NeutMapsImage4')" role="button" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseFour" aria-expanded="false" aria-controls="NeutMapsCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Decomposing an Antibody Repertoire
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingFour">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										Suppose that we have created a map of all the flu strains circulating this year (shown below on the right). To quantify your level of protection, we take a drop of your blood and measure its ability to inhibit a few of these viruses (e.g. the light-blue, light-green, and light-gray strains). Using just those three measurements (shown in the table), can you guess how protected you will be against the remaining viruses?
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Take a moment to think this through. Remember that we do not know how many antibodies there are within your blood, but we can translate the information that we have into our map. Strong protection against a virus means that there must be an antibody nearby. So where would you predict your antibodies reside on the map? And given their positions, can you predict your level of protection against the rest of the viruses?
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="NeutMapsHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('NeutMapsImage5')" role="button" data-toggle="collapse" data-parent="#NeutMapsAccordion"
+									 href="#NeutMapsCollapseFive" aria-expanded="false" aria-controls="NeutMapsCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Quantifying the Human Response
+									</a>
+								</h4>
+							</div>
+							<div id="NeutMapsCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="NeutMapsHeadingFive">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										At minimum there must be antibodies near the light-green and light-gray viruses, and with this information you can predict (a lower bound for) your protection against the other viruses. Granted, there may be more antibodies lurking in other regions of the map, but our ability to detect them grows with the number of measurements we have, and such antibodies would only increase your protection.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Our ability to say so much using only a few measurements is remarkable, given that we did not know how many antibodies there should be nor their individual protection profiles! So where did the information come from...? It came from the positions of the viruses on the map. An antibody can inhibit two viruses that lie close to one another, but not two viruses that are far apart. Thus, when your blood strongly inhibits two dissimilar viruses, we know that at least two antibodies must be at work.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This approach provides a new tool to peer into our immune repertoires and characterize our individual antibodies - something that I had considered impossible a year ago. <a href="https://doi.org/10.1101/2020.08.28.270561">This work</a> has opened up an array of fascinating questions such as: How do our antibodies move along the map with each infection? Can an antibody be "guided" to a specific location? Given your specific antibodies, which vaccine strain would best augment your protection? Like any innovation, this one opens up many new and exciting roads that I cannot wait to travel!
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="footer-grids1-right">
-					<p class="animated wow slideInRight" data-wow-delay="0s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+
+				<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#NeutMapsImage1"></a>
+					<a data-toggle="tab" href="#NeutMapsImage2"></a>
+					<a data-toggle="tab" href="#NeutMapsImage3"></a>
+					<a data-toggle="tab" href="#NeutMapsImage4"></a>
+					<a data-toggle="tab" href="#NeutMapsImage5"></a>
+
+					<!-- The different images that appear on the side -->
+					<div class="tab-content">
+						<div id="NeutMapsImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg1.png" width="350" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage2" class="tab-pane fade">
+							
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+							
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg2.png" width="640" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg3.png" width="360" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg4.png" width="360" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="NeutMapsImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\NeutMapsImg5.png" width="360" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-<!-- //footer -->
-<!-- for bootstrap working -->
+	<!-- //team -->
+
+	
+	
+	<!-- about -->
+	<div class="about">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Influenza by the Numbers</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s">"Knowing the key numbers governing a biological process is akin to a scientific superpower." - Rob Phillips</p>
+			<div class="about-grids">
+
+
+				<div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#SnapShotImage1"></a>
+					<a data-toggle="tab" href="#SnapShotImage2"></a>
+					<a data-toggle="tab" href="#SnapShotImage3"></a>
+					<a data-toggle="tab" href="#SnapShotImage4"></a>
+					<a data-toggle="tab" href="#SnapShotImage5"></a>
+
+
+
+					<div class="tab-content">
+						<div id="SnapShotImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\SnapShotImg1.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="SnapShotImage2" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\SnapShotImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="SnapShotImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\SnapShotImg3.1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\SnapShotImg3.2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="SnapShotImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\SnapShotImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="SnapShotImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\SnapShotImg5.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="SnapShotAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="SnapShotHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('SnapShotImage1')" data-toggle="collapse" data-parent="#SnapShotAccordion"
+									 href="#SnapShotCollapseOne" aria-expanded="true" aria-controls="SnapShotCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Diving into Disease Research
+									</a>
+								</h4>
+							</div>
+							<div id="SnapShotCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="SnapShotHeadingOne">
+								<div class="panel-body panel_text">
+
+									<p>
+										For my postdoc, I decided to shift lanes and apply my biophysics training to the realm of disease research. I joined the lab of <a href="https://research.fhcrc.org/bloom/en.html">Jesse Bloom</a> to study how the influenza virus (a.k.a. flu) can evolve to escape from the antibodies that circulate within us.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										In preparation for my postdoc, I read Janeway's Immunobiology textbook which impressed upon me the exquisite complexity of our immune system, yet when I began my postdoc I still knew very little about flu biology. This meant that every week someone would blow my mind with a crazy fact about the global dynamics of flu, transmission bottlenecks, or vaccine effectiveness...in short, I was having a blast!
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="SnapShotHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('SnapShotImage2')" data-toggle="collapse" data-parent="#SnapShotAccordion"
+									 href="#SnapShotCollapseTwo" aria-expanded="false" aria-controls="SnapShotCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Start With The Basics
+									</a>
+								</h4>
+							</div>
+							<div id="SnapShotCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="SnapShotHeadingTwo">
+								<div class="panel-body panel_text">
+									<p>
+										To get myself oriented, I asked basic questions such as "How big is a flu virion?" and "How long does an infection typically last?" Regardless of the question, the most common response was, "It depends." I appreciated that answer - after all, humans are highly complex, and in my graduate studies I learned that even the behavior of individual bacteria can vary greatly, even though the population average was often tightly constrained. But when I pressed my colleagues for the typical range of values, no one seemed to know these numbers off the top of their head.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This response embodies a philosophical difference between biology and physics. Biology embraces the unique and breathtaking complexity of life, and the breadth of phenotypes is often of greatest interest. Physics promotes simple and unifying models, which can quantitatively describe key aspects of a system, but which might ignore some of its more nuanced behavior (think of the spherical cow analogy). Whether this tradeoff is worthwhile might be a matter of taste, but it explains why physicists yearn for key numbers in order to build quantitative models.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										For example, notice that the influenza virion shown on the left is covered in teal and pink spikes. If you know the dimensions of the virus and the number of spikes, you could determine the nearest neighbor separation between adjacent spikes. Why is this an important number? It turns out that although antibodies often bind to the top of these spikes, the most sought-after antibodies bind to their stems (which are more conserved across flu strains). Given the average spacing between spikes, is there room for a stem-targeting antibody to bind to the stem of a spike?
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="SnapShotHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('SnapShotImage3')" data-toggle="collapse" data-parent="#SnapShotAccordion"
+									 href="#SnapShotCollapseThree" aria-expanded="false" aria-controls="SnapShotCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Quantitative Thinking
+									</a>
+								</h4>
+							</div>
+							<div id="SnapShotCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="SnapShotHeadingThree">
+								<div class="panel-body panel_text">
+									<p>
+										Let's follow these questions through. The 2D pictures on the left show that viruses have a variety of shapes. Most of the viruses used in experiments are spherical, although the long and narrow morphology is believed to help a virus infect humans more efficiently. For spherical viruses, the mean diameter is typically 125 nm (including the lengths of the spikes on either end).
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+									
+									<p>
+										Given that there are 350 spikes spread uniformly on the surface of a virion, you can compute that the average separation will be 10 nm between nearest neighbor spikes. Since the width of an antibody is 15 nm, it will be a tight squeeze for it to bind to a spike's stem - it is possible, but the antibody will have to align itself just right. Indeed, squeezing into this tight slot reduces stem-antibody binding by about 10x.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This tight packing naturally leads to more questions. Is there enough room for every spike to be simultaneously bound by a stem-targeting antibody? If not, how are these antibodies able to stop a virus without binding to all spikes? Could it be that only a subset of spikes need to be bound in order to prevent the virus from infecting our cells? All of these questions are surprisingly understudied, and they are all motivated by some simple calculations that are only possible once we know some numbers.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="SnapShotHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('SnapShotImage4')" data-toggle="collapse" data-parent="#SnapShotAccordion"
+									 href="#SnapShotCollapseFour" aria-expanded="false" aria-controls="SnapShotCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>SnapShot of Influenza
+									</a>
+								</h4>
+							</div>
+							<div id="SnapShotCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="SnapShotHeadingFour">
+								<div class="panel-body panel_text">
+									<p>
+										To answer these types of questions, I read broadly on many aspects of flu biology, gathering numbers from all contexts. How many virions are produced during an infection and how many of our cells do they destroy? How many antibodies do we produce when we get infected by flu? How can we quantify the protection offered by our antibodies? 
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+									
+									<p>
+										As I gathered these numbers, they naturally coalesced into different sectors of flu biology. As a fun mini-project, I put together a 1-page graphical illustration (published as a <a href="https://github.com/TalEinav/InfluenzaSnapshot">Cell SnapShot</a>) that highlights the key numbers underlying an influenza infection and our antibody response against the virus. This SnapShot is targeted at influenza researchers who are specialists in one aspect of flu biology but would like a 30,000-foot view of some of its other characteristics.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="SnapShotHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('SnapShotImage5')" data-toggle="collapse" data-parent="#SnapShotAccordion"
+									 href="#SnapShotCollapseFive" aria-expanded="false" aria-controls="SnapShotCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Science Meets Art
+									</a>
+								</h4>
+							</div>
+							<div id="SnapShotCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="SnapShotHeadingFive">
+								<div class="panel-body panel_text">
+									<p>
+										One of the reasons I loved this project is that it melded my skill sets in science and illustration. Each of the figures was either created programmatically or was drawn from scratch in Adobe Illustrator. Feedback from my artistically-inclined colleagues led to me to think hard about the various aspects of graphical design from the iconography to the color palette.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+										
+									<p>
+										As a fun example, the influenza virion in the center of the SnapShot was made in Mathematica, which meant that we could generate hundreds of variants and choose the one that looked the best. The pictures to the left display some of the most interesting virions that emerged!
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+										
+									<p>
+										As with any project, this one could not have been done without the help of many colleagues. I spent hours discussing the content and layout with Lauren Gentles, a terrific graduate student in our lab, and Jesse Bloom's feedback was instrumental in ensuring our scientific accuracy. You can find the final version of the SnapShot, representing all of our collective hard work, at <a href="https://www.cell.com/cell/pdf/S0092-8674(20)30566-3.pdf">this link</a>.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+	
+	
+	
+	<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">What is it like to do a PhD? Reflections on the Past Five Years</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s" style="color: rgb(0, 0, 0)">"The best thesis defense is a good thesis offense." - XKCD</p>
+			<div class="about-grids">
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="ThesisAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="ThesisHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('ThesisImage1')" data-toggle="collapse" data-parent="#ThesisAccordion"
+									 href="#ThesisCollapseOne" aria-expanded="true" aria-controls="ThesisCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>A PhD in Physics
+									</a>
+								</h4>
+							</div>
+							<div id="ThesisCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="ThesisHeadingOne">
+								<div class="panel-body panel_text" style="color: black">
+
+
+
+									<p>
+										I loved my time at Caltech. Every day was an extraordinary gift, and while it is impossible to distill five years' worth of transformative experiences and personal growth into a few paragraphs, I want to highlight several key components that made my experience so overwhelmingly positive.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										One of my favorite aspects of graduate school is that your knowledge base grows exponentially. The first year of grad school is spent trying to figure out the basics: how do you make figures, collaborate with others, or iterate on a paper with your advisor. Three years later, things that previously seemed impossible click into place and you crank our papers. By the time you graduate, you are dragging your advisor and collaborators along in the wake of your excitement to blaze new paths of research.
+									</p>
+
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="ThesisHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" id="firstTitleToggle" role="button" onclick="customClick('ThesisImage2')" data-toggle="collapse"
+									 data-parent="#ThesisAccordion" href="#ThesisCollapseTwo" aria-expanded="false" aria-controls="ThesisCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>What Surprised You The Most?
+									</a>
+								</h4>
+							</div>
+							<div id="ThesisCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ThesisHeadingTwo">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										One of the most surprising aspects of my PhD was how closely each of my projects revolved around experiments. I entered graduate school as a theoretical physicist expecting to work on esoteric mathematical models, yet the direct connection with data provided a window into the exhilarating world of biology.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										While I have never physically manipulated these biological systems in the lab, my models allow me to push and prod and examine their behavior from the most mundane to the utterly extreme limits. The pace of biological research continues to grow at a staggering pace, and the field needs models that harness the incredible wealth of hard-won data to weave a few more threads of understanding into our tapestry of how these incredible living systems operate.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="ThesisHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('ThesisImage3')" data-toggle="collapse" data-parent="#ThesisAccordion"
+									 href="#ThesisCollapseThree" aria-expanded="false" aria-controls="ThesisCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>What Was The Hardest Part?
+									</a>
+								</h4>
+							</div>
+							<div id="ThesisCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ThesisHeadingThree">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										The hardest part of grad school was working with experimentalists. But the best part of grad school was also working with experimentalists! When I did my first, truly joint theory-experiment project, I quickly realized that experiments...take...time. Whereas a theorist can promise to complete a section of a paper by a certain date (come hell or high water), doing careful and robust experimental work may require you to start over, again and again, for months!
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Every problem can be broken down into a number of steps, and every step is trivial for the right person. The key to a good collaboration is to choose the right set of people that cannot solve a problem individually, but that can crack it together. A theory/experiment partnership provides a clean example, but collaborations between multiple theorists or multiple experimentalists often unlock beautiful new avenues of research. My own experiences attest that the result of good collaborations is a piece of work of far greater quality than what I could have accomplished on my own.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="ThesisHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('ThesisImage4')" role="button" data-toggle="collapse" data-parent="#ThesisAccordion"
+									 href="#ThesisCollapseFour" aria-expanded="false" aria-controls="ThesisCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>What Was Your Research About?
+									</a>
+								</h4>
+							</div>
+							<div id="ThesisCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ThesisHeadingFour">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										Writ large, there are two overarching goals that pervade my dissertation. The first is to translate our biological knowledge into concrete physical models, enabling us to quantitatively describe how the key molecular components in each system interact to carry out their function. The second goal is to analyze how mutations can be mapped into the fundamental biophysical parameters governing each system.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										As you read through the projects on this page, I pose to you the following question that my advisor Rob Phillips asked throughout my PhD: "When is a model good enough? When should we declare victory?" My answer has been that theory must push our understanding of a system until we uncover a jaw-dropping conclusion. While this criterion obviously depends upon the spring constant of your particular jaw, it emphasizes that simply drawing a curve that fits the data is not enough. A successful model should give intuition into a previously unexplained phenomenon, provide a mental map with which to contemplate new experiments, and significantly accelerate the pace of research. Each of my projects aim to fulfill these criteria. Collectively, I hope these works demonstrate how the melding of theory and experiment creates a whole that is far greater than the sum of its parts.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="ThesisHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('ThesisImage5')" role="button" data-toggle="collapse" data-parent="#ThesisAccordion"
+									 href="#ThesisCollapseFive" aria-expanded="false" aria-controls="ThesisCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>And Aside from Research?
+									</a>
+								</h4>
+							</div>
+							<div id="ThesisCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ThesisHeadingFive">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										Universities are very special places. Few other institutions will hire people whose job is to increase students' well being, and I enjoyed tapping into the bountiful offerings. For example, every term I took a fun class (such as silk screening or improv), and each time I was blown away by the passion and commitment of the teachers.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Halfway through my PhD, I painted a picture of my mom for her birthday, and I asked Jim Barry (the art teacher) if he would help me reveal it at the end of the term when my parents would visit campus. He happily agreed, and when my parents arrived he first gave us a grand tour of the Caltech Art Chateau, after which he showed my parents the 3D virtual reality drawing program on the Oculus Rift (where you can literally peer into a drawing). Then, right as they removed their headsets, Jim had me present my own work, beautifully framed and with the perfect lighting. My parents were astounded (and immediately asked Jim if he had secretly drew the piece!). To this day they vividly remember that trip because of Jim.
+									</p>
+									
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										The magic of Caltech is that such moments happen surprisingly often with your friends and colleagues - when you interact with a small group of people in many different capacities, you forge deep connections. In one day, I may teach someone physics, dance hip hop beside them, and then eat dinner together.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										During my second-to-last year at Caltech, I took a Storytelling class with my friend Heidi Klumpe (a biology graduate student and fellow dancer), and I was blown away by the elegance and creativity of her writing. Getting to glimpse such hidden talents is a privilege, and Heidi made what was already an excellent class an unforgettable experience. One year later, she asked if I would be willing to be interviewed for a new Caltech podcast series called <a href="https://caltechletters.org/podcasts/not-my-thesis/">Not My Thesis</a> that explores the lives of PhD students at Caltech. I happily agreed, and I was amazed by the passion and skill that Heidi invested into this project. Thanks to her efforts, you can listen to some of my favorite anecdotes from my time at Caltech and hear other accounts of what it is like to pursue a PhD.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#ThesisImage1"></a>
+					<a data-toggle="tab" href="#ThesisImage2"></a>
+					<a data-toggle="tab" href="#ThesisImage3"></a>
+					<a data-toggle="tab" href="#ThesisImage4"></a>
+					<a data-toggle="tab" href="#ThesisImage5"></a>
+
+					<!-- The different images that appear on the side -->
+					<div class="tab-content">
+						<div id="ThesisImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\thesisImg1.png" width="300" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="ThesisImage2" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\thesisImg2.png" width="350" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="ThesisImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\thesisImg3.png" width="300" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="ThesisImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\thesisImg4.png" width="450" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="ThesisImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\thesisImg5.png" width="450" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+
+
+
+	<!-- about -->
+	<div class="about">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Induction of Transcription Factors</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s">"The test of a scientific theory is, I suggest, its fruitfulness." - James Conant</p>
+			<div class="about-grids">
+
+
+				<div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#MWCInductionImage1"></a>
+					<a data-toggle="tab" href="#MWCInductionImage2"></a>
+					<a data-toggle="tab" href="#MWCInductionImage3"></a>
+					<a data-toggle="tab" href="#MWCInductionImage4"></a>
+					<a data-toggle="tab" href="#MWCInductionImage5"></a>
+					<a data-toggle="tab" href="#MWCInductionImage6"></a>
+
+
+
+
+					<div class="tab-content">
+						<div id="MWCInductionImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCInductionImage2" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCInductionImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg2.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg3.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCInductionImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg2.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg3.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCInductionImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg2.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCInductionImage6" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg2.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcInductionImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="MWCInductionAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCInductionHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('MWCInductionImage1')" data-toggle="collapse" data-parent="#MWCInductionAccordion"
+									 href="#MWCInductionCollapseOne" aria-expanded="true" aria-controls="MWCInductionCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Can
+										Biology be Quantitative?
+									</a>
+								</h4>
+							</div>
+							<div id="MWCInductionCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="MWCInductionHeadingOne">
+								<div class="panel-body panel_text">
+
+									<p>
+
+										Any experimentalist will tell you that there is variability in science, regardless of whether you are measuring the voltage
+										across a circuit element or the protein production in a cell. Yet compared to physics, biology is a "squishy" science.
+										By necessity, biology experiments can never be conducted at extremely low temperatures or on a single, simple component
+										of a system. Instead, even the simplest biology experiments work with incredibly complex organisms, trying to understand
+										how their myriad parts weave together to generate a cell's complex behavior.
+
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										So this naturally begs the question: just how quantitative can biology be?
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCInductionHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCInductionImage2')" data-toggle="collapse" data-parent="#MWCInductionAccordion"
+									 href="#MWCInductionCollapseTwo" aria-expanded="false" aria-controls="MWCInductionCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Transcriptional
+										Regulation
+									</a>
+								</h4>
+							</div>
+							<div id="MWCInductionCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCInductionHeadingTwo">
+								<div class="panel-body panel_text">
+									<p>
+										We explored this question in the context of transcriptional regulation, when DNA is read in order to produce protein. Many
+										aspects of this fundamental process have been extensively studied, and the main players are shown on the left.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										<em>Polymerase</em> (light blue) binds to DNA and initiates transcription, the first step in transforming this
+										segment of DNA into a protein. When more polymerase is present, transcription will happen more often, leading to
+										increased protein production.
+										<!--If at a later time the cell wants to slow down this process, it can decrease the number 
+										of polymerase molecules, although that will decrease not only gene expression at this site but globally for every gene. -->
+										To slow down expression of this particular gene, a cell can produce a
+										<em>repressor</em> (red) which can only bind to this specific gene. The repressor competes with the polymerase
+										for the same binding spots on the DNA, so that when the repressor is bound polymerase will not read this DNA.
+										<!--If at a 
+										later time the cell wants to crank the production of this gene back up, it can either increase the number of 
+										polymerase (which has a global effect) or decrease the number of repressors (which has a local effect).-->
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										But cells also respond to their environment, which introduces another level of regulation. A small molecule called an <em>inducer</em> (small blue circle) can bind to the repressor and inactive it, so that the repressor is no longer capable of binding
+										to the DNA. The benefit of having these multiple layers of regulation is that it enables cells to respond on different
+										time scales - cells can quickly change the local concentration of an inducer in order to inactive repressors in
+										minutes, but reducing the actual number of repressors can take hours. One of the best studied examples of an inducible
+										system (and the one that we ran our experiments on) is the Lac repressor in <em>E. coli</em>: the gene contains
+										enzymes to digest the sugar lactose, but this gene is normally silenced by a repressor except when lactose (the
+										inducer) is present.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCInductionHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCInductionImage3')" data-toggle="collapse" data-parent="#MWCInductionAccordion"
+									 href="#MWCInductionCollapseThree" aria-expanded="false" aria-controls="MWCInductionCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The
+										Predictions
+									</a>
+								</h4>
+							</div>
+							<div id="MWCInductionCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCInductionHeadingThree">
+								<div class="panel-body panel_text">
+									<p>
+										While the interactions between these molecular players are qualitatively understood, there is no quantitative framework that
+										can predict exactly how much gene expression will increase when the number of repressors are, say, doubled. Fueled
+										by this challenge, we formulated a model for this system using a combination of statistical mechanics and thermodynamics.
+										But we quickly ran into a problem - because this system was never quantitatively studied, many of the necessary
+										parameters (such as how tightly the inducer binds to the repressor or the repressor binds to DNA) were unknown.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										To that end, we took data on a single strain of bacteria in order to characterize all of the parameters of the system. After
+										that, we had the keys to the kingdom. We could predict exactly how the system should behave in any other setting.
+										For example, it is experimentally straightforward to tune the number of repressors in a cell. So using our single
+										data set (orange circles), we predicted how other strains should behave. And then came the real question: will
+										our predictions accurately portray the behavior of our system?
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCInductionHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCInductionImage4')" data-toggle="collapse" data-parent="#MWCInductionAccordion"
+									 href="#MWCInductionCollapseFour" aria-expanded="false" aria-controls="MWCInductionCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The
+										Results
+									</a>
+								</h4>
+							</div>
+							<div id="MWCInductionCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCInductionHeadingFour">
+								<div class="panel-body panel_text">
+									<p>
+										Before showing you the result, it is worth stressing once again that these predictions were made based on data from a <em>single</em>										strain, before we constructed and measured any other strains. This is a prime example of theory leading the way
+										to make strict predictions that are either carried out or disproved by experiment. This is quantitative biology
+										at its best.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										And for readers with a strong statistics background, the shaded areas represent the 95% credible region using Bayesian model
+										fitting.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCInductionHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCInductionImage5')" data-toggle="collapse" data-parent="#MWCInductionAccordion"
+									 href="#MWCInductionCollapseFive" aria-expanded="false" aria-controls="MWCInductionCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Theory
+										Meets Experiment
+									</a>
+								</h4>
+							</div>
+							<div id="MWCInductionCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCInductionHeadingFive">
+								<div class="panel-body panel_text">
+									<p>
+										In total, we created 18 different strains of bacteria (6 of them are shown on the left) to test our framework under many
+										different experimental conditions. In each case, the data matched remarkably well with the predictions!
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This benign-looking data set represents a huge experimental effort. Each of the 72 data points is the average of eight different
+										experimental runs, with each run analyzing over 40,000 cells. The whole procedure took several months to carry
+										out experimentally - in contrast we fleshed out the theoretical framework over the course of a few weeks. That
+										is not a dig on experiments. Rather, this difference in time scale demonstrates how important it is to be able
+										to explore a system theoretically.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Amusingly, once we started to present these results to other professors, we began to get feedback such as, "Why don't the
+										dark blue data points lie exactly on the line? They seem to be off by about 10%." And this led to an impromptu conversation
+										among the professors in the audience, many of whom had the opinion that biology, being a nascent field, is a "factor
+										of 2" science where you are lucky to have a theory that matches your experiment to within a factor of 2. As the
+										field develops, more exact theories will surely arise that minimize the small discrepancies between our theory
+										and the data, yet it should be appreciated that before our paper there was only a qualitative understanding of
+										inducible gene regulation, and the plot on the left represents a significant boost in our ability to model such
+										systems.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCInductionHeadingSix">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCInductionImage6')" data-toggle="collapse" data-parent="#MWCInductionAccordion"
+									 href="#MWCInductionCollapseSix" aria-expanded="false" aria-controls="MWCInductionCollapseSix">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The
+										End, or the Beginning?
+									</a>
+								</h4>
+							</div>
+							<div id="MWCInductionCollapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCInductionHeadingSix">
+								<div class="panel-body panel_text">
+									<p>
+										The fantastic consistency between our theoretical predictions and experimental measurement does not spell out the end of
+										the story. Rather, it provides justification that our theory is correct, so that we can now begin to explore transcriptional
+										regulation theoretically (which is orders of magnitude faster than exploring it experimentally!). We can now make
+										quantitative statements about the effects of the physical parameters governing the system (such as the binding
+										strength between the repressor and inducer) and explore all of the possible phenotypes that a cell can exhibit.
+										The data shown on the left is just the tip of the iceberg. This experiment has paved the way for a truly exciting
+										possibility of quantitatively exploring the effects of mutations in the context of transcriptional regulation (see
+										below).
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										More details about this work, as well as the full data set and analysis notebooks (in both Python and Mathematica) may be
+										found at this
+										<a href="https://rpgroup-pboc.github.io/mwc_induction/posts/2017/02/21/about.html">dedicated website</a>.
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+
+
+
+
+	<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Mutations from a Thermodynamic Perspective</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s" style="color: rgb(0, 0, 0)">"Everything must be made as simple as possible. But not simpler." - Albert Einstein</p>
+			<div class="about-grids">
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="MWCMutantsAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCMutantsHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('MWCMutantsImage1')" data-toggle="collapse" data-parent="#MWCMutantsAccordion"
+									 href="#MWCMutantsCollapseOne" aria-expanded="true" aria-controls="MWCMutantsCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>A
+										Problem With Counting
+									</a>
+								</h4>
+							</div>
+							<div id="MWCMutantsCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="MWCMutantsHeadingOne">
+								<div class="panel-body panel_text" style="color: black">
+
+
+
+									<p>
+										Proteins facilitate nearly every cellular process. A typical protein is built up of 300 <em>amino acids</em>, and
+										in bacteria there are 20 different amino acids to choose from. Thus, the number of possible proteins is greater
+										than the number of atoms in the universe (raised to the fifth power!). It is impossible to experimentally test any
+										significant fraction of these proteins, so how can we explore this overwhelmingly large space as we search for
+										new drugs, create synthetic circuits, and try to deepen our understanding of living systems?
+									</p>
+
+
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCMutantsHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" id="firstTitleToggle" role="button" onclick="customClick('MWCMutantsImage2')" data-toggle="collapse"
+									 data-parent="#MWCMutantsAccordion" href="#MWCMutantsCollapseTwo" aria-expanded="false" aria-controls="MWCMutantsCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Theory
+										Meets Experiment
+									</a>
+								</h4>
+							</div>
+							<div id="MWCMutantsCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCMutantsHeadingTwo">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										No purely experimental solution can be found for this problem. No matter how many upgrades you make to the hardware, how
+										expensive the lubrication oil you buy, how many graduate students you put to work on this problem, a real solution
+										can only come from an interplay of theory and experiment.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Rather than building a protein from scratch, we can take the opposite approach and ask what happens if we mutate just a single
+										amino acid inside of an existing protein. Will the resulting mutant protein resemble the original? It has long
+										been known that the answer is no. For example, sickle cell anemia is caused by a single mutation in hemoglobin,
+										the oxygen-carrying protein in our blood. But can there be cases where we can approximate such mutants as small
+										perturbations of the initial protein?
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCMutantsHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCMutantsImage3')" data-toggle="collapse" data-parent="#MWCMutantsAccordion"
+									 href="#MWCMutantsCollapseThree" aria-expanded="false" aria-controls="MWCMutantsCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>So
+										Much Data!
+									</a>
+								</h4>
+							</div>
+							<div id="MWCMutantsCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCMutantsHeadingThree">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										Mutations are one of the key tools biologists use to problem into living systems. By changing the amino acid composition
+										of a protein and examining how well the resulting mutant functions, we can begin to understand how a protein functions.
+										Most biology research deals with trying to understand and modify the behavior of existing proteins, and a few brave
+										souls are attempting to build their own proteins from scratch.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Biologists have been collecting data about mutants for decades. For example, consider the plot on the right, which characterizes
+										a protein's response to a stimulus - each color represents a different point mutation. We see that the data is
+										all over the place! The response curves shift to the left, right, up, down. Thankfully, the curves appear to be
+										sigmoidal in every case (except the flat line at the very bottom), but there is certainly a lot going on. How can
+										we begin to understand this data?
+									</p>
+
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCMutantsHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('MWCMutantsImage4')" role="button" data-toggle="collapse" data-parent="#MWCMutantsAccordion"
+									 href="#MWCMutantsCollapseFour" aria-expanded="false" aria-controls="MWCMutantsCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>0th
+										Order Theory
+									</a>
+								</h4>
+							</div>
+							<div id="MWCMutantsCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCMutantsHeadingFour">
+								<div class="panel-body panel_text" style="color: black">
+
+
+									<p>
+										Suppose that a receptor can bind molecule <em>A</em> at one binding site and molecule <em>B</em> at another. If
+										we mutate a single amino acid in the region where <em>A</em> binds, can we assume that the receptor's affinity
+										to <em>B</em> will remain unchanged? Conversely, if we only mutate the receptor's binding site for <em>B</em>,
+										will the binding between the receptor and <em>A</em> be affected?
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										The simplicity of this idea belies its usefulness - if the effects of mutations are independent, the consequences are ground-breaking.
+										One immediate application is that if you take data on <em>N</em> proteins with mutations in the <em>A</em>										binding pocket and combine it with data on <em>N</em> proteins with mutations in the <em>B</em> binding pocket,
+										then you can now predict the behavior of the <em>N<sup>2</sup></em> double mutants spanning all possible combinations
+										of <em>A</em> mutations and <em>B</em> mutations!
+									</p>
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCMutantsHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" onclick="customClick('MWCMutantsImage5')" role="button" data-toggle="collapse" data-parent="#MWCMutantsAccordion"
+									 href="#MWCMutantsCollapseFive" aria-expanded="false" aria-controls="MWCMutantsCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Searching
+										the Space of Mutations
+									</a>
+								</h4>
+							</div>
+							<div id="MWCMutantsCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCMutantsHeadingFive">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										Another useful attribute of this theory is that it provides a framework to quantify the possible behaviors of different classes
+										of mutants. In March 2017, five graduate students in the Phillips lab began exploring the quantitative repercussions
+										of this framework and determining whether this theory stands up to Bayesian model selection. This is ongoing research, but initial results look promising. Meanwhile, we found that this same framework can be successfully applied within the context of allosteric <a href="https://pubs.acs.org/doi/10.1021/acs.jpcb.6b12672">ion channels</a> and <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0204275">transcription factors</a>.
+									</p>
+
+									<!-- Create some vertical space -->
+									<!-- <div class="col-xs-0" style="height:10px;"></div> -->
+
+									<!-- <p> 
+									</p>-->
+
+
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCMutantsHeadingSix">
+							  <h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#MWCMutantsAccordion" href="#MWCMutantsCollapseSix" aria-expanded="false" aria-controls="MWCMutantsCollapseSix">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>HEADING SIX
+								</a>
+							  </h4>
+							</div>
+							<div id="MWCMutantsCollapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCMutantsHeadingSix">
+							   <div class="panel-body panel_text" style="color: black">
+								
+								
+								
+								
+								<p> 
+								</p>
+								
+								<div class="col-xs-0" style="height:10px;"></div>
+								
+								<p>
+								</p>
+								
+								
+								
+								
+ 							  </div>
+							</div>
+						</div> -->
+
+					</div>
+				</div>
+
+				<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#MWCMutantsImage1"></a>
+					<a data-toggle="tab" href="#MWCMutantsImage2"></a>
+					<a data-toggle="tab" href="#MWCMutantsImage3"></a>
+					<a data-toggle="tab" href="#MWCMutantsImage4"></a>
+					<a data-toggle="tab" href="#MWCMutantsImage5"></a>
+
+					<!-- The different images that appear on the side -->
+					<div class="tab-content">
+						<div id="MWCMutantsImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg1.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCMutantsImage2" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCMutantsImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg3.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCMutantsImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCMutantsImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\mwcMutantsImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+
+
+	<!-- about -->
+	<div class="about">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Enzyme Kinetics</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s">"I have yet to see any problem, however complicated, which, when looked at in the right way, did not become still more
+				complicated." - Poul Anderson</p>
+			<div class="about-grids">
+
+
+				<div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#MWCEnzymesImage1"></a>
+					<a data-toggle="tab" href="#MWCEnzymesImage2"></a>
+					<a data-toggle="tab" href="#MWCEnzymesImage3"></a>
+					<a data-toggle="tab" href="#MWCEnzymesImage4"></a>
+					<a data-toggle="tab" href="#MWCEnzymesImage5"></a>
+					<a data-toggle="tab" href="#MWCEnzymesImage6"></a>
+
+
+
+
+					<div class="tab-content">
+						<div id="MWCEnzymesImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg1.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCEnzymesImage2" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg2.png" alt=" " class="center-block img-responsive" />
+
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg3.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCEnzymesImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg2.png" alt=" " class="center-block img-responsive" />
+
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg3.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCEnzymesImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:80px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg2.png" alt=" " class="center-block img-responsive" />
+
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg3.png" alt=" " class="center-block img-responsive" />
+
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg4.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCEnzymesImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg4.png" alt=" " class="center-block img-responsive" />
+
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg5.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCEnzymesImage6" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg4.png" alt=" " class="center-block img-responsive" />
+
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcEnzymesImg5.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+
+
+					<!--<div class="tab-content">
+						<div id="EnzymeImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/researchEnzyme.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="EnzymeImage2" class="tab-pane fade">
+							<img src="Other/Pictures/researchEnzyme.png" alt=" " class="center-block img-responsive" />
+							<img src="Other/Pictures/placeHolder.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>-->
+				</div>
+
+
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="EnzymeAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="EnzymeHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('MWCEnzymesImage1')" data-toggle="collapse" data-parent="#EnzymeAccordion"
+									 href="#EnzymeCollapseOne" aria-expanded="true" aria-controls="EnzymeCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The
+										curious case of substrate inhibition
+									</a>
+								</h4>
+							</div>
+							<div id="EnzymeCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="EnzymeHeadingOne" href="#EnzymeImage2">
+								<div class="panel-body panel_text">
+									<p>
+										<em>Enzymes</em> are biological catalysts which turn a <em>substrate</em> into a <em>product</em>. For our purposes,
+										we can think of an enzyme as a cutter which snips a substrate in half.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										How will the speed of an enzyme - the amount of product it forms every minute - change as we add substrate? With more substrate,
+										the probability at any second that the enzyme finds a substrate in its "mouth" increases, so we expect that the
+										enzyme's speed monotonically increases with the amount of substrate - the typical biologist's guess will be a sigmoidal
+										response shown by the theory curve on the left. Contrast this with the actual experimental data (Figures 3 and
+										4 from <a href="http://molpharm.aspetjournals.org/content/2/5/369.full.pdf">Changeux 1966</a>)
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Past a certain point, it appears that the speed of an enzyme <em>decreases</em> when you add substrate! This is
+										both exciting and confounding, and your blood starts to boil as you smell blood in the water. But wait, there's
+										more!
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="EnzymeHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCEnzymesImage2')" data-toggle="collapse" data-parent="#EnzymeAccordion"
+									 href="#EnzymeCollapseTwo" aria-expanded="false" aria-controls="EnzymeCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The
+										plot thickens with inhibitor acceleration
+									</a>
+								</h4>
+							</div>
+							<div id="EnzymeCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="EnzymeHeadingTwo">
+								<div class="panel-body panel_text">
+									<p>
+										There are many other molecular players involved in enzyme kinetics. One such player is a <em>competitive inhibitor</em>										which fits into the same site as the substrate, but which cannot be cleaved by the enzyme. Hence, this molecule
+										competes for the binding site and inhibits the reaction.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										How will the speed of an enzyme depend on the amount of competitive inhibitor? This one is easy. The inhibitor blocks the
+										reaction, so naturally the enzyme's speed will decrease as you add more competitive inhibitor.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										And yet, the data disagrees! For some enzymes, adding a small amount of competitive inhibitor can <em>increase</em>										the enzyme's speed. Ridiculous! By now your heart is really thumping, and you want some answers.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="EnzymeHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCEnzymesImage3')" data-toggle="collapse" data-parent="#EnzymeAccordion"
+									 href="#EnzymeCollapseThree" aria-expanded="false" aria-controls="EnzymeCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Some
+										answers
+									</a>
+								</h4>
+							</div>
+							<div id="EnzymeCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="EnzymeHeadingThree">
+								<div class="panel-body panel_text">
+									<p>
+										Before getting some answers, let's appreciate the context of these problems. The first phenomenon (dubbed "substrate inhibition")
+										has been documented hundreds of times and is believed to occur in approximately 20% of all enzymes. This prevalence
+										suggests that substrate inhibition may serve some critical function in enzyme behavior, and we also acknowledge
+										that the known <a href="http://onlinelibrary.wiley.com/doi/10.1002/bies.200900167/abstract">mechanisms and advantages</a>										of for substrate inhibition will strongly depend on context of a particular enzyme.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Let's focus on the second effect (called "inhibitor acceleration") which is comparatively rare in enzymes. Our model will
+										be extremely simple, requiring only the three relevant molecular players: the enzyme, substrate, and competitive
+										inhibitor...along with one other key ingredient.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="EnzymeHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCEnzymesImage4')" data-toggle="collapse" data-parent="#EnzymeAccordion"
+									 href="#EnzymeCollapseFour" aria-expanded="false" aria-controls="EnzymeCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>The
+										key ingredient
+									</a>
+								</h4>
+							</div>
+							<div id="EnzymeCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="EnzymeHeadingFour">
+								<div class="panel-body panel_text">
+									<p>
+										<em>Allostery</em> is the concept that an enzyme (or any other protein) can exist in two different conformational
+										states. For our model, we will assume that an enzyme can exist in either an <em>active state</em> (where it is
+										able to cleave substrate extremely quickly) or an <em>inactive state</em> (where it speed is greatly diminished).
+										The active state can often be hundreds of times faster than the inactive state.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Why these two allosteric states exist is an excellent biochemistry question. As a very rough explanation, proteins are very
+										wobbly structures that often have access to numerous different configurations. Indeed, allostery is found in practically
+										every biological context from ion channels to molecular motors to regulator proteins. In our simple model, we assume
+										that an enzyme spends the vast majority of its time in only two of these states, so that we can neglect the other
+										states.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="EnzymeHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCEnzymesImage5')" data-toggle="collapse" data-parent="#EnzymeAccordion"
+									 href="#EnzymeCollapseFive" aria-expanded="false" aria-controls="EnzymeCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>A
+										resolution
+									</a>
+								</h4>
+							</div>
+							<div id="EnzymeCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="EnzymeHeadingFive">
+								<div class="panel-body panel_text">
+									<p>
+										Now for the solution! Consider an allosteric enzyme which flip flops between an active (fast) state and an inactive (slow)
+										state. Suppose this enzyme has two identical and independent binding sites for substrate. (Enzymes often have multiple
+										binding sites, as it permits them to further increase their speed.)
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Assume that, in the absence of substrate and competitive inhibitor, the enzyme prefers to be in the slower inactive state.
+										If we now add substrate molecules, the enzyme will lethargically convert them into product.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Now let's add competitive inhibitor into the mix. Assume that when the inhibitor binds to the enzyme, it forces the enzyme
+										to assume the much faster active state. So what happens when we vary the amount of competitive inhibitor?
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										The two extremes are the easiest to determine. In the absence of any competitive inhibitor, the enzyme will be chugging along
+										at the laid-back speed of its inactive state. In the other limit, if we completely saturate the system with competitive
+										inhibitor, the substrate will never bind to the enzyme and hence the enzyme's speed will go to zero, as no product
+										is being made. But the middle regime is the interesting bit. If there is just enough competitive inhibitor that
+										<em>only one</em> of the enzyme's sites is bound to competitive inhibitor, then the other site is free to bind
+										substrate at the fast rate of the active state. If the speed of the enzyme in the active state is more than double
+										its speed in the inactive state, then the fact that the inhibitor clogs up one of the two binding sites is made
+										up for by the change in allosteric states. Mystery solved!
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-sub" role="tab" id="EnzymeHeadingSix">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCEnzymesImage6')" data-toggle="collapse" data-parent="#EnzymeAccordion"
+									 href="#EnzymeCollapseSix" aria-expanded="false" aria-controls="EnzymeCollapseSix">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Or
+										is it...?
+									</a>
+								</h4>
+							</div>
+							<div id="EnzymeCollapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="EnzymeHeadingSix">
+								<div class="panel-body panel_text">
+
+									<p>
+										In working out the details of such system, the math not only provides you with precise conditions for when such peaks happen,
+										but often times yield unexpected results. For example, the picture we painted above indicates that inhibitor acceleration
+										only requires three assumptions: (1) an allosteric enzyme that (2) naturally favors the inactive state interacts
+										with (3) a competitive inhibitor which favors the active state, then a peak should form. Yet when you carefully
+										work through the theory, crossing the t's and dotting the i's, you find that one of these assumptions is actually
+										not needed. You can find the juicy details in <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jpcb.6b01911">this paper</a>,
+										which I wrote with Linas Mazutis and Rob Phillips. <a href="Other/Pictures/Research Pictures/Conference Posters/2015-12-13 Tal Einav ASCB Poster.pdf">A poster</a>										summarizing this work was presented at ASCB 2016.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+
+
+
+	<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay="0s">Ion Channels</h3>
+			<p class="qui animated wow zoomIn" data-wow-delay="0s" style="color: rgb(0, 0, 0)">"Never give up. And never, under any circumstances, face the facts." - Ruth Gordon</p>
+			<div class="about-grids">
+				<div class="col-md-6 about-grids-left">
+					<div class="panel-group" id="MWCIonChannelsAccordion" role="tablist" aria-multiselectable="true">
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCIonChannelsHeadingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" onclick="customClick('MWCIonChannelsImage1')" data-toggle="collapse" data-parent="#MWCIonChannelsAccordion"
+									 href="#MWCIonChannelsCollapseOne" aria-expanded="true" aria-controls="MWCIonChannelsCollapseOne">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Clear
+										Cut Allostery
+									</a>
+								</h4>
+							</div>
+							<div id="MWCIonChannelsCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="MWCIonChannelsHeadingOne"
+							 href="#MWCIonChannelsImage2">
+								<div class="panel-body panel_text" style="color: black">
+
+									<p>
+										Ion channels are signaling proteins that control the flow of ions into and out of the cell. These channels are the key players
+										at the synapses of neurons, allowing electrical signals to quickly travel from your muscles to your brain.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									Different classes of ion channels are triggered by different stimuli such as mechanical stress, a difference in voltage across
+									the membrane, or the presence of a ligand. We will focus on the latter case, which is depicted on the right. Upon
+									binding to a ligand, an ion channel opens up its central pore, permitting fast ionic flow (10<sup>6</sup>									- 10<sup>8</sup> ions/sec).
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									As seen in the above cases (in the induction of repressors and the kinetics of enzymes), ion channels are <em>allosteric</em>,
+									which means the they assume two distinct conformations (an open and a closed state). This implies that the same
+									tools and framework that we developed for the scenarios above should also apply in the context of ion channels.
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCIonChannelsHeadingTwo">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCIonChannelsImage2')" data-toggle="collapse" data-parent="#MWCIonChannelsAccordion"
+									 href="#MWCIonChannelsCollapseTwo" aria-expanded="false" aria-controls="MWCIonChannelsCollapseTwo">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>A
+										Nice Pattern
+									</a>
+								</h4>
+							</div>
+							<div id="MWCIonChannelsCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCIonChannelsHeadingTwo">
+								<div class="panel-body panel_text" style="color: black">
+									<p>
+										In 1995, <a href="http://www.nature.com/nature/journal/v376/n6540/abs/376514a0.html">Henry Lester's</a> group in
+										Caltech discovered a curious quirk in one such ion channel. When they introduced a single mutation into one subunit
+										of their ion channel, the ion channel became more sensitive, so that it took less ligand to make the channel open.
+										When they applied this same mutation to a second subunit on the ion channel, they found that the channel became
+										more sensitive again, and <em>by the same amount</em>! They mutated a third and then a fourth subunit and found
+										each time that the response of the ion channel shifted by a constant amount.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Astonishing! At the time of publication, the group proposed that each mutation shifts the free energy of the system by a
+										constant amount, and that the mutations are independent. Both ideas were extremely intriguing, but at the time
+										there was no quantitative framework available to take these insights further.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCIonChannelsHeadingThree">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCIonChannelsImage3')" data-toggle="collapse" data-parent="#MWCIonChannelsAccordion"
+									 href="#MWCIonChannelsCollapseThree" aria-expanded="false" aria-controls="MWCIonChannelsCollapseThree">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>What
+										are Meaningful Questions?
+									</a>
+								</h4>
+							</div>
+							<div id="MWCIonChannelsCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCIonChannelsHeadingThree">
+								<div class="panel-body panel_text" style="color: black">
+									<p>
+										To my eyes, the data on the right is extremely provocative. Here are some questions that it immediately raises for me:
+									</p>
+
+									<ul>
+										<li>What physical parameter does the mutation change?</li>
+
+										<li>Why are the curves equally spaced? </li>
+
+										<li>Will other mutations also cause equally spaced curves?</li>
+
+										<li>Can this behavior be predicted <em>a priori</em> in other ion channels?</li>
+									</ul>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Answering any of these questions requires a concrete framework, which was the subject of <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jpcb.6b12672">this paper</a>,
+										where we touched upon all of these questions. But the point I want to address here is: what exactly does it mean
+										to have a framework to analyze ion channels?
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCIonChannelsHeadingFour">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCIonChannelsImage4')" data-toggle="collapse" data-parent="#MWCIonChannelsAccordion"
+									 href="#MWCIonChannelsCollapseFour" aria-expanded="false" aria-controls="MWCIonChannelsCollapseFour">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>A
+										Unified Framework
+									</a>
+								</h4>
+							</div>
+							<div id="MWCIonChannelsCollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCIonChannelsHeadingFour">
+								<div class="panel-body panel_text" style="color: black">
+									<p>
+										To make headway in understanding this data, we need a way not simply understand the individual responses of each ion channel
+										mutant, but rather a way to understand the data from all five mutants simultaneously. The difference is subtle
+										and often unappreciated, but this is exactly the reason why the analysis of these mutants did not proceed further
+										in 1995.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										Instead, we took the approach of having a single model that describes the behavior of any ion channel. Our analysis began
+										by understanding which physical parameters changed with each subsequent mutation, and we determined that it was
+										the free energy difference between the open and closed ion channel states. We then confirmed the original hypothesis
+										that this energy difference shifted by a constant amount with each mutation, and we showed how this translated
+										to a constant shift in the response of the ion channels.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										But how can we really show that we analyzed this system using a single, unified framework? How can we stress the point that
+										we analyzed the data from all five mutants simultaneously, rather than separately? The answer is...
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCIonChannelsHeadingFive">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" onclick="customClick('MWCIonChannelsImage5')" data-toggle="collapse" data-parent="#MWCIonChannelsAccordion"
+									 href="#MWCIonChannelsCollapseFive" aria-expanded="false" aria-controls="MWCIonChannelsCollapseFive">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Data
+										Collapse
+									</a>
+								</h4>
+							</div>
+							<div id="MWCIonChannelsCollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCIonChannelsHeadingFive">
+								<div class="panel-body panel_text" style="color: black">
+									<p>
+										The figure on the right shows a plot of the data as a function of the general free energy of the system, which we called
+										the <em>Bohr parameter</em>. From this perspective, the five distinct responses of the ion channel mutants
+										all collapse onto a single master curve.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										This view nicely demonstrates the advantage of having one framework from which you can view all of your data. And you can
+										also take the reverse approach: we can translate the generalized response back to find the spectrum of all possible
+										phenotypes that the system can exhibit. In this way, we can begin to theoretically probe the space of all possible
+										mutations, which can complement and guide experimental efforts.
+									</p>
+
+									<!-- Create some vertical space -->
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										In many ways, I feel that this work highlights the future of biological research. Rather than trying to focusing on the individual
+										responses of a protein, we can start to make general claims about families of mutants and about ion channels in
+										general. One of the most exciting directions suggested by this work (and some of the work above) is that the effects
+										of multiple mutations can be decoupled. The data on the right shows that mutating each subunit shifts the free
+										energy difference of the system by a constant amount, independent of whether the other subunits are mutated. Fueled
+										by these results, we are now doing a more systematic survey of mutations in the setting of allosteric transcription
+										factors (see above).
+									</p>
+
+								</div>
+							</div>
+						</div>
+
+						<!--<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0)">
+							<div class="panel-heading panel-heading-sub" role="tab" id="MWCIonChannelsHeadingSix">
+								<h4 class="panel-title asd">
+									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#MWCIonChannelsAccordion" href="#MWCIonChannelsCollapseSix"
+									 aria-expanded="false" aria-controls="MWCIonChannelsCollapseSix">
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Or
+										is it...?
+									</a>
+								</h4>
+							</div>
+							<div id="MWCIonChannelsCollapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="MWCIonChannelsHeadingSix">
+								<div class="panel-body panel_text" style="color: black">
+									<p>
+										This simple model is worked out in my <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jpcb.6b01911">2016 paper</a>										with Linas Mazutis and Rob Phillips, where we also discuss the phenomenon of substrate inhibition. <a href="Other/Pictures/2015-12-13 Tal Einav ASCB Poster.pdf">A poster</a>										summarizing this work was presented at ASCB 2016.
+									</p>
+
+									<div class="col-xs-0" style="height:10px;"></div>
+
+									<p>
+										In working out the details of such system, the math not only provides you with precise conditions for when such peaks happen,
+										but often times yield unexpected results. For example, the picture we painted above indicates that inhibitor acceleration
+										only requires three assumptions: (1) an allosteric enzyme that (2) naturally favors the inactive state interacts
+										with (3) a competitive inhibitor which favors the active state, then a peak should form. Yet when you carefully
+										work through the theory, crossing the t's and dotting the i's, you find that one of these assumptions is actually
+										not needed. You can find the juicy details in...<a href="http://pubs.acs.org/doi/abs/10.1021/acs.jpcb.6b01911">the paper</a>.
+									</p>
+								</div>
+							</div>
+						</div>-->
+
+					</div>
+				</div>
+				<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+
+					<!-- Must be somewhere in this file (doesn't matter where) in order for the images to toggle on click -->
+					<a data-toggle="tab" href="#MWCIonChannelsImage1"></a>
+					<a data-toggle="tab" href="#MWCIonChannelsImage2"></a>
+					<a data-toggle="tab" href="#MWCIonChannelsImage3"></a>
+					<a data-toggle="tab" href="#MWCIonChannelsImage4"></a>
+					<a data-toggle="tab" href="#MWCIonChannelsImage5"></a>
+
+
+					<div class="tab-content">
+						<div id="MWCIonChannelsImage1" class="tab-pane fade in active">
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg1.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCIonChannelsImage2" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCIonChannelsImage3" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCIonChannelsImage4" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg2.png" alt=" " class="center-block img-responsive" />
+						</div>
+
+						<div id="MWCIonChannelsImage5" class="tab-pane fade">
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg1.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:40px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg2.png" alt=" " class="center-block img-responsive" />
+
+							<!-- Create some vertical space -->
+							<div class="col-xs-0" style="height:20px;"></div>
+
+							<img src="Other/Pictures/Research Pictures\mwcIonChannelsImg3.png" alt=" " class="center-block img-responsive" />
+						</div>
+					</div>
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+
+
+	<!-- footer -->
+	<div class="footer">
+		<a name="CONTACT"></a>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+                    <h3>Contact</h3>
+                    <p>Email: tal.einav &alpha; lji.org</p>
+                    <p>Office: 2411</p>
+				</div>
+                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+                    <br><br><br>
+                    <p>Mail: 9420 Athena Circle</p>
+                    <p>La Jolla, CA 92037</p>
+                </div>
+
+
+				<!-- Create some vertical space -->
+				<div class="col-xs-0" style="height:200px;"></div>
+
+				<div class="col-md-12 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+					<p> Good research is what makes new concepts familiar and familiar concepts new. </p>
+					<!-- <p>  "Research is to see what everybody else has seen, and to think what nobody else has thought." - Albert Szent-Gyorgyi</p> -->
+					<!-- <p>  "Imagination is more important than knowledge." - Albert Einstein</p> -->
+					<!-- <p>  "We are all agreed that your theory is crazy. The question which divides us is whether it is crazy enough to have a chance of being correct. My own feeling is that it is not crazy enough." - Niels Bohr</p> -->
+				</div>
+			</div>
+
+
+			<div class="footer-grids1">
+				<div class="footer-grids1-left animated wow slideInLeft">
+					<ul>
+						<li class="active"><a href="index.html">Research</a></li>
+						<li><a href="Mathematica.html">Mathematica</a></li>
+						<li><a href="Teaching.html">Teaching</a></li>
+						<li><a href="Lab Philosophy.html">Lab Philosophy</a></li>
+						<li><a href="Personal Info.html">About Me</a></li>
+					</ul>
+				</div>
+				<div class="footer-grids1-right">
+					<p class="animated wow slideInRight" data-wow-delay=".01s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- //footer -->
+	<!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
+	<!-- //for bootstrap working -->
+	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
+															   $(document).ready(function () {
+																   /*
+																	   var defaults = {
+																	   containerID: 'toTop', // fading element id
+																	   containerHoverID: 'toTopHover', // fading element hover id
+																	   scrollSpeed: 1200,
+																	   easingType: 'linear' 
+																	   };
+																   */
 
-<!-- Begin Google Analytics, Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMG882TZJX"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+																   $().UItoTop({ easingType: 'easeOutQuart' });
 
-		gtag('config', 'G-FMG882TZJX');
+															   });
 	</script>
-<!-- End Google Analytics -->
+	<!-- //here ends scrolling icon -->
 </body>
+
 </html>
